@@ -5,11 +5,11 @@ services:
     container_name: vitepress
     build: .
     ports:
-      - 127.0.0.1:3003:5000
+      - 5000:5000
     environment:
       LETSENCRYPT_HOST: www.zwd.xyz
       VIRTUAL_HOST: www.zwd.xyz
-      VIRTUAL_PORT: 3003
+      VIRTUAL_PORT: 5000
       VIRTUAL_PATH: /fe-stack
     command: yarn docs:serve
     networks:
