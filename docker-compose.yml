@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: vitepress
+    build: .
+    ports:
+      - '3003:3000'
+    environment:
+      LETSENCRYPT_HOST: www.zwd.xyz
+      VIRTUAL_HOST: www.zwd.xyz
+      VIRTUAL_PORT: 3003
+      VIRTUAL_PATH: /fe-stack/
+    networks:
+      - blog
+
+networks:
+  blog:
+    external:
+      name: blog

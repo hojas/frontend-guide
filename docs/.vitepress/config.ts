@@ -1,12 +1,13 @@
-import { defineConfig } from 'vitepress'
-
-export default defineConfig({
+export default {
   base: '/fe-stack/',
-  title: '前端全栈知识体系',
-  description: '前端全栈知识体系',
+  lang: 'zh',
+  title: '前端开发技术体系',
+  titleTemplate: '分享前端开发技术和 Node.js 开发技术',
+  description: '分享前端开发技术和 Node.js 开发技术',
   markdown: {
     lineNumbers: true,
   },
+  lastUpdated: true,
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -48,5 +49,10 @@ export default defineConfig({
         link: '/nodejs/',
       },
     ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
+    footer: {
+      message: 'AGPL-3.0 Licensed',
+      copyright: 'Copyright © 2022-present hojas',
+    },
   },
-})
+}
