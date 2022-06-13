@@ -1,4 +1,5 @@
 export default {
+  base: '/fe-stack/',
   lang: 'zh',
   title: '前端开发技术体系',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术',
