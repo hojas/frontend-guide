@@ -9,7 +9,7 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs --port 3000"
+    "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.1"

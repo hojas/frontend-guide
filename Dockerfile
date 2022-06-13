@@ -12,6 +12,3 @@ WORKDIR /opt/app
 COPY . .
 COPY --from=builder /opt/app/node_modules ./node_modules
 RUN yarn docs:build
-
-EXPOSE 3000
-CMD yarn docs:serve
