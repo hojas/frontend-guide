@@ -1,7 +1,7 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "yarn@1.22.18",
+  "packageManager": "yarn@1.22.19",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",
@@ -12,6 +12,6 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.1"
+    "vitepress": "^1.0.0-alpha.2"
   }
 }
