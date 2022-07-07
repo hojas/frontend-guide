@@ -7,10 +7,10 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /fe-stack/
+      link: /basic/html.html
     - theme: alt
       text: Github
-      link: https://github.com/hojas
+      link: https://github.com/hojas/fe-stack
 features:
   - title: 前端基础
     details: HTML、CSS、JavaScript、TypeScript 等

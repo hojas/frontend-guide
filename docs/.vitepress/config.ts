@@ -14,18 +14,18 @@ export default {
       {
         text: '前端基础',
         items: [
-          { text: 'HTML', link: '/html' },
-          { text: 'CSS', link: '/css' },
-          { text: 'JavaScript', link: '/javascript' },
-          { text: 'TypeScript', link: '/typescript' },
+          { text: 'HTML', link: '/basic/html' },
+          { text: 'CSS', link: '/basic/css' },
+          { text: 'JavaScript', link: '/basic/javascript' },
+          { text: 'TypeScript', link: '/basic/typescript' },
         ],
       },
       {
         text: '前端框架',
         items: [
-          { text: 'Vue', link: '/vue' },
-          { text: 'React', link: '/react' },
-          { text: 'Angular', link: '/angular' },
+          { text: 'Vue', link: '/framework/vue' },
+          { text: 'React', link: '/framework/react' },
+          { text: 'Angular', link: '/framework/angular' },
         ],
       },
       {
