@@ -1,7 +1,7 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "yarn@1.22.19",
+  "packageManager": "pnpm@7.6.0",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",

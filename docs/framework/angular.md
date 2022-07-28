@@ -1,5 +1,5 @@
 ---
-title: Angular
+title: Angular 核心原理
 ---
 
-# Angular
+## Angular 核心原理
