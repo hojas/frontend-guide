@@ -1,4 +1,4 @@
-FROM node:16.16.0-alpine AS builder
+FROM --platform=linux/amd64 node:16.16.0-alpine AS builder
 
 RUN apk update && apk add --no-cache git
 
@@ -8,7 +8,7 @@ COPY . .
 RUN corepack enable && pnpm i && pnpm run docs:build
 
 
-FROM node:16.16.0-alpine
+FROM --platform=linux/amd64 node:16.16.0-alpine
 
 ENV PORT=3000
 WORKDIR /opt/app
