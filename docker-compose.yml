@@ -10,11 +10,8 @@ services:
       VIRTUAL_HOST: www.zwd.xyz
       VIRTUAL_PORT: 5000
       VIRTUAL_PATH: /fe-stack
-    network_mode: bridge
-    networks:
-      - nx_blog
 
 networks:
-  blog:
-    external:
-      name: nx_blog
+  default:
+    name: nx_blog
+    external: true
