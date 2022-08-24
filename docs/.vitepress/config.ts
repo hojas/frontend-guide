@@ -49,9 +49,20 @@ export default {
         link: '/nodejs',
       },
     ],
+    sidebar: [
+      {
+        text: 'JavaScript',
+        items: [
+          {
+            text: 'Array',
+            link: '/basic/javascript/array',
+          },
+        ],
+      },
+    ],
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     footer: {
-      message: 'AGPL-3.0 Licensed',
+      message: 'MIT Licensed',
       copyright: 'Copyright © 2022-present hojas',
     },
   },

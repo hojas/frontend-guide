@@ -1,4 +1,5 @@
-TAG = $(shell git describe --abbrev=0 --tags)
+# TAG = $(shell git describe --abbrev=0 --tags)
+TAG = v1.0.0
 IMAGE_TAG = $(TAG:v%=%)
 IMAGE_NAME = hojas/fe-stack
 
