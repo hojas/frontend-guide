@@ -1,6 +1,6 @@
 export default {
   base: '/fe-stack/',
-  lang: 'zh',
+  lang: 'zh-Hans',
   title: '前端开发技术体系',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术',
   description: '分享前端开发技术和 Node.js 开发技术',
@@ -49,21 +49,24 @@ export default {
         link: '/nodejs',
       },
     ],
-    sidebar: [
-      {
-        text: 'JavaScript',
-        items: [
-          {
-            text: 'Array',
-            link: '/basic/javascript/array',
-          },
-        ],
-      },
-    ],
+    sidebar: {
+      '/basic/javascript/': [
+        {
+          text: 'JavaScript',
+          collapsible: true,
+          items: [
+            {
+              text: 'Array',
+              link: '/basic/javascript/array',
+            },
+          ],
+        },
+      ],
+    },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     footer: {
       message: 'MIT Licensed',
       copyright: 'Copyright © 2022-present hojas',
     },
   },
-}
+};
