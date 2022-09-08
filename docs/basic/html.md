@@ -4,6 +4,25 @@ title: HTML
 
 # HTML
 
+## base 标签
+
+`<base>` HTML 元素指定用于文档中所有相对 URL 的基 URL。一个文档中只能有一个 < base > 元素，`<base>` 元素有两个属性：
+
+1. `href` 表示整个文档中用于相对 URL 的基 URL，允许使用绝对 URL 和相对 URL
+2. `target` 设置 `<a>`、`<form>`、`<area>` 元素的行为，常用的值有：`_self`、`_blank`、`_parent`、`_top`
+
+```HTML
+<html>
+<head>
+  <base href="https://www.example.com/" target="_blank">
+</head>
+<body>
+  <!-- 点击 a 将在新标签页打开链接 https://www.example.com/a.html -->
+  <a href="a.html">a</a>
+</body>
+</html>
+```
+
 ## HTML 元素 nodeType
 
 获取元素 nodeType

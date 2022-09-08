@@ -14,10 +14,10 @@ export default {
       {
         text: '前端基础',
         items: [
-          { text: 'HTML', link: '/basic/html' },
-          { text: 'CSS', link: '/basic/css' },
-          { text: 'JavaScript', link: '/basic/javascript' },
-          { text: 'TypeScript', link: '/basic/typescript' },
+          { text: 'HTML', link: 'https://www.w3school.com.cn/html/index.asp' },
+          { text: 'CSS', link: 'https://web.dev/learn/css/' },
+          { text: 'JavaScript', link: 'https://javascript.info/' },
+          { text: 'TypeScript', link: 'https://www.typescripttutorial.net/' },
         ],
       },
       {
