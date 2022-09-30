@@ -1,7 +1,7 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.11.0",
+  "packageManager": "pnpm@7.12.2",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",
@@ -12,7 +12,8 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.13",
-    "vue": "^3.2.39"
+    "prettier": "^2.7.1",
+    "vitepress": "^1.0.0-alpha.17",
+    "vue": "^3.2.40"
   }
 }

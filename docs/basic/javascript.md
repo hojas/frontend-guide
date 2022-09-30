@@ -2,6 +2,6 @@
 title: JavaScript
 ---
 
-# JavaScript
+## 基础教程
 
-[阅读更多](javascript/array.md)
+https://javascript.info/

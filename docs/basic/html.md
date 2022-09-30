@@ -2,7 +2,9 @@
 title: HTML
 ---
 
-# HTML
+## 基础教程
+
+https://www.w3school.com.cn/html/index.asp
 
 ## base 标签
 
@@ -12,13 +14,14 @@ title: HTML
 2. `target` 设置 `<a>`、`<form>`、`<area>` 元素的行为，常用的值有：`_self`、`_blank`、`_parent`、`_top`
 
 ```HTML
+
 <html>
 <head>
-  <base href="https://www.example.com/" target="_blank">
+    <base href="https://www.example.com/" target="_blank">
 </head>
 <body>
-  <!-- 点击 a 将在新标签页打开链接 https://www.example.com/a.html -->
-  <a href="a.html">a</a>
+<!-- 点击 a 将在新标签页打开链接 https://www.example.com/a.html -->
+<a href="a.html">a</a>
 </body>
 </html>
 ```
