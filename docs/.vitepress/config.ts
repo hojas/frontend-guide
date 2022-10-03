@@ -1,3 +1,4 @@
+/** @type {import('vitepress').UserConfig} */
 export default {
   base: '/fe-stack/',
   lang: 'zh-Hans',
@@ -48,7 +49,40 @@ export default {
         text: 'Node.js',
         link: '/nodejs',
       },
+      {
+        text: '计算机网络',
+        link: '/network',
+      },
     ],
+    sidebar: {
+      '/browser': [
+        {
+          text: '浏览器原理',
+          items: [
+            {
+              text: '浏览器架构',
+              link: '/browser/architecture',
+            },
+            {
+              text: '页面加载过程',
+              link: '/browser/navigation',
+            },
+            {
+              text: '浏览器渲染流程',
+              link: '/browser/render',
+            },
+            {
+              text: 'v8 引擎',
+              link: '/browser/v8',
+            },
+            {
+              text: 'v8 垃圾回收',
+              link: '/browser/v8-gc',
+            },
+          ],
+        },
+      ],
+    },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     footer: {
       message: 'MIT Licensed',

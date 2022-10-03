@@ -8,16 +8,17 @@ https://www.w3school.com.cn/html/index.asp
 
 ## base 标签
 
-`<base>` HTML 元素指定用于文档中所有相对 URL 的基 URL。一个文档中只能有一个 < base > 元素，`<base>` 元素有两个属性：
+`<base>` HTML 元素指定用于文档中所有相对 URL 的基 URL。一个文档中只能有一个 `<base>` 元素，`<base>` 元素有两个属性：
 
 1. `href` 表示整个文档中用于相对 URL 的基 URL，允许使用绝对 URL 和相对 URL
 2. `target` 设置 `<a>`、`<form>`、`<area>` 元素的行为，常用的值有：`_self`、`_blank`、`_parent`、`_top`
 
 ```HTML
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <base href="https://www.example.com/" target="_blank">
+    <title>demo</title>
 </head>
 <body>
 <!-- 点击 a 将在新标签页打开链接 https://www.example.com/a.html -->
@@ -26,24 +27,18 @@ https://www.w3school.com.cn/html/index.asp
 </html>
 ```
 
-## HTML 元素 nodeType
+## HTML 文档 nodeType
 
-获取元素 nodeType
+用于表示 HTML 文档节点的类型。
 
 ```javascript
 const t = document.querySelector('div').nodeType
 console.log(t) // 1
 ```
 
-| 值  | 节点类型              | nodeName       | nodeValue  | 描述                                               | 子节点                                                                       |
-| --- | --------------------- | -------------- | ---------- | -------------------------------------------------- | ---------------------------------------------------------------------------- |
-| 1   | Element               | 元素名         | null       | 代表元素                                           | Element, Text, Comment, ProcessingInstruction, CDATASection, EntityReference |
-| 2   | Attribute             | 属性名称       | 属性值     | 代表属性                                           | Text, EntityReference                                                        |
-| 3   | Text                  | #text          | 节点的内容 | 代表元素或属性中的文本内容                         | None                                                                         |
-| 4   | CDATASection          | #cdata-section | 节点的内容 | 代表文档中的 CDATA 部分（不会由解析器解析的文本）  | None                                                                         |
-| 7   | ProcessingInstruction | target         | 节点的内容 | 代表处理指令                                       | None                                                                         |
-| 8   | Comment               | #comment       | 注释文本   | 代表注释                                           | None                                                                         |
-| 9   | Document              | #document      | null       | 代表整个文档（DOM 树的根节点）                     | Element, ProcessingInstruction, Comment, DocumentType                        |
-| 10  | DocumentType          | 文档类型名称   | null       | 向为文档定义的实体提供接口                         | None                                                                         |
-| 11  | DocumentFragment      | #document 片段 | null       | 代表轻量级的 Document 对象，能够容纳文档的某个部分 | Element, ProcessingInstruction, Comment, Text, CDATASection, EntityReference |
-| 12  | Notation              | 符号名称       | null       | 代表 DTD 中声明的符号                              | None                                                                         |
+常用值：
+
+- `1`：表示节点是 HTML 元素
+- `2`：表示节点是属性
+- `3`：表示节点是文本节点
+- `8`：表示节点是注释节点

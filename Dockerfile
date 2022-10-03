@@ -1,9 +1,17 @@
-FROM --platform=linux/amd64 node:16.17.0-alpine
-
-ENV PORT=3000
+FROM --platform=linux/amd64 node:16.17.1-alpine AS builder
 
 WORKDIR /opt/app
-RUN npm i -g serve && mkdir ./fe-stack
-COPY ./docs/.vitepress/dist ./fe-stack
+COPY .npmrc package.json pnpm-lock.yaml ./
+RUN corepack enable && pnpm i
 
-CMD serve -p $PORT .
+
+FROM --platform=linux/amd64 node:16.17.1-alpine
+
+RUN apk add --no-cache git
+
+WORKDIR /opt/app
+COPY . .
+COPY --from=builder /opt/app/node_modules ./node_modules
+RUN corepack enable && pnpm run docs:build
+
+CMD pnpm run docs:serve

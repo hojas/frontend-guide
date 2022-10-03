@@ -9,11 +9,11 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --port 3000",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs --port 5000"
   },
   "devDependencies": {
     "prettier": "^2.7.1",
-    "vitepress": "^1.0.0-alpha.17",
+    "vitepress": "^1.0.0-alpha.19",
     "vue": "^3.2.40"
   }
 }
