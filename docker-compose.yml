@@ -6,8 +6,8 @@ services:
       - 127.0.0.1:5000:5000
     environment:
       PORT: 5000
-      LETSENCRYPT_HOST: www.zwd.xyz
-      VIRTUAL_HOST: www.zwd.xyz
+      LETSENCRYPT_HOST: www.chenyuanxiang.com
+      VIRTUAL_HOST: www.chenyuanxiang.com
       VIRTUAL_PORT: 5000
       VIRTUAL_PATH: /fe-stack
 
