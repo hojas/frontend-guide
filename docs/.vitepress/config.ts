@@ -30,16 +30,16 @@ export default {
         ],
       },
       {
+        text: '浏览器原理',
+        link: '/browser',
+      },
+      {
         text: '前端工程化',
         link: '/engineering',
       },
       {
         text: '性能优化',
         link: '/performance',
-      },
-      {
-        text: '浏览器原理',
-        link: '/browser',
       },
       {
         text: '移动端',
