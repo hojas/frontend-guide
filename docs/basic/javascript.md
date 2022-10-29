@@ -20,9 +20,7 @@ https://wangdoc.com/es6/
 
 ## Symbol 类型
 
-`symbol` 是唯一标识符的基本类型。
-
-`symbol` 是使用带有可选描述（name）的 `Symbol()` 调用创建的。
+`symbol` 是唯一标识符的基本类型，使用带有可选描述（name）的 `Symbol()` 调用创建。
 
 `symbol` 总是不同的值，即使它们有相同的名字。如果希望同名的 `symbol` 相等，那么应该使用全局注册表：`Symbol.for(key)`
 返回（如果需要的话则创建）一个以 `key` 作为名字的全局 `symbol`。使用 `Symbol.for` 多次调用 `key` 相同的 `symbol`
@@ -90,3 +88,7 @@ for..in 循环在其自身和继承的属性上进行迭代。所有其他的键
 [原理](http://www.wawow.xyz/#/md-render?bid=40)
 
 ## 浏览器事件循环
+
+常见的 macro-task：script（整体代码）、setTimeout、setInterval、 setImmediate、 I/O 操作、UI 交互等。
+
+常见的 micro-task：Promise、MutationObserver 等。

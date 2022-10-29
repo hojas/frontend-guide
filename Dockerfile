@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:18.11.0-alpine AS builder
+FROM --platform=linux/amd64 node:18.12.0-alpine AS builder
 
 ENV NODE_ENV=production
 WORKDIR /opt/app
@@ -6,7 +6,7 @@ COPY .npmrc package.json pnpm-lock.yaml ./
 RUN corepack enable && pnpm i
 
 
-FROM --platform=linux/amd64 node:18.11.0-alpine
+FROM --platform=linux/amd64 node:18.12.0-alpine
 
 RUN apk add --no-cache git
 
