@@ -1,8 +1,7 @@
 /** @type {import('vitepress').UserConfig} */
 export default {
-  base: '/',
   lang: 'zh-Hans',
-  title: '前端开发技术体系',
+  title: '陈远翔个人网站',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术',
   description: '分享前端开发技术和 Node.js 开发技术',
   markdown: {
@@ -10,6 +9,7 @@ export default {
   },
   lastUpdated: true,
   themeConfig: {
+    outlineTitle: '文章导航',
     nav: [
       { text: '首页', link: '/' },
       {
@@ -88,6 +88,7 @@ export default {
       ],
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
+    lastUpdatedText: '最后更新',
     footer: {
       message: 'MIT Licensed',
       copyright: 'Copyright © 2022-present hojas',
