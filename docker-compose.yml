@@ -3,6 +3,7 @@ services:
     image: hojas/fe-stack:latest
     container_name: fe-stack-app
     environment:
+      LETSENCRYPT_HOST: www.chenyuanxiang.com
       VIRTUAL_HOST: www.chenyuanxiang.com
       VIRTUAL_PORT: 3000
   nginx-proxy:
