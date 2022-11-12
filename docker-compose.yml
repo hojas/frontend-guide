@@ -47,6 +47,6 @@ volumes:
   acme:
 
 networks:
-  default:
+  fe_stack:
     name: fe_stack
     driver: bridge
