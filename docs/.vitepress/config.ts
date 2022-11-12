@@ -1,7 +1,7 @@
 /** @type {import('vitepress').UserConfig} */
 export default {
   lang: 'zh-Hans',
-  title: '陈远翔个人网站',
+  title: '陈远翔前端博客',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术',
   description: '分享前端开发技术和 Node.js 开发技术',
   markdown: {
@@ -41,10 +41,10 @@ export default {
         text: '性能优化',
         link: '/performance',
       },
-      {
-        text: '移动端',
-        link: '/mobile',
-      },
+      // {
+      //   text: '移动端',
+      //   link: '/mobile',
+      // },
       {
         text: 'Node.js',
         link: '/nodejs',
@@ -52,6 +52,10 @@ export default {
       {
         text: '计算机网络',
         link: '/network',
+      },
+      {
+        text: '个人项目',
+        link: '/project',
       },
       {
         text: '博客',

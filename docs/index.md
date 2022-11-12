@@ -1,15 +1,15 @@
 ---
 layout: home
 hero:
-  name: 前端开发技术体系
+  name: 陈远翔前端博客
   text: 分享前端开发技术和 Node.js 开发技术
-  tagline: 前端基础，前端框架，前端工程化，性能优化，浏览器原理，Node.js 开发等
+  tagline: 包括前端基础，前端框架，前端工程化，性能优化，浏览器原理，Node.js 开发等
   actions:
     - theme: brand
-      text: 开始学习
-      link: /basic/html.html
+      text: 阅读博客
+      link: blog
     - theme: alt
-      text: Github
+      text: 本站源码
       link: https://github.com/hojas/fe-stack
 features:
   - title: 前端基础
