@@ -3,7 +3,6 @@ services:
     image: hojas/fe-stack:latest
     container_name: fe-stack-app
     environment:
-      LETSENCRYPT_HOST: www.chenyuanxiang.com
       VIRTUAL_HOST: www.chenyuanxiang.com
       VIRTUAL_PORT: 3000
   nginx-proxy:
@@ -18,9 +17,6 @@ services:
       - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
-    network_mode: bridge
-    networks:
-      - fe_stack
   acme-companion:
     container_name: nginx-proxy-acme
     image: nginxproxy/acme-companion
@@ -32,9 +28,6 @@ services:
       - certs:/etc/nginx/certs:rw
       - acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    network_mode: bridge
-    networks:
-      - fe_stack
 
 volumes:
   conf:
@@ -42,8 +35,3 @@ volumes:
   html:
   certs:
   acme:
-
-networks:
-  fe_stack:
-    name: fe_stack
-    driver: bridge
