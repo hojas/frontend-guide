@@ -2,13 +2,10 @@ services:
   app:
     image: hojas/fe-stack:latest
     container_name: fe-stack-app
-    ports:
-      - 127.0.0.1:3000:3000
     environment:
       LETSENCRYPT_HOST: www.chenyuanxiang.com
       VIRTUAL_HOST: www.chenyuanxiang.com
       VIRTUAL_PORT: 3000
-      VIRTUAL_PATH: /
   nginx-proxy:
     image: nginxproxy/nginx-proxy
     container_name: nginx-proxy

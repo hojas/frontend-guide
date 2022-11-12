@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    container_name: fe-stack-app
+    environment:
+      VIRTUAL_HOST: localhost
+      VIRTUAL_PORT: 3000
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro

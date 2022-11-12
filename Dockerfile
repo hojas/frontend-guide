@@ -16,4 +16,5 @@ COPY . .
 COPY --from=builder /opt/app/node_modules ./node_modules
 RUN npm i -g pnpm && pnpm run build
 
+EXPOSE 3000
 CMD pnpm run serve
