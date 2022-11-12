@@ -1,6 +1,6 @@
 /** @type {import('vitepress').UserConfig} */
 export default {
-  base: '/fe-stack/',
+  base: '/',
   lang: 'zh-Hans',
   title: '前端开发技术体系',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术',
@@ -52,6 +52,10 @@ export default {
       {
         text: '计算机网络',
         link: '/network',
+      },
+      {
+        text: '博客',
+        link: '/blog',
       },
     ],
     sidebar: {

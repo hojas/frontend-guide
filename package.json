@@ -1,19 +1,19 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.14.0",
+  "packageManager": "pnpm@7.15.0",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs --port 3000",
+    "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs --host 0.0.0.0 --port 5000"
+    "serve": "vitepress serve docs --host 0.0.0.0 --port 3000"
   },
   "dependencies": {
-    "vitepress": "^1.0.0-alpha.26",
-    "vue": "^3.2.41"
+    "vitepress": "^1.0.0-alpha.28",
+    "vue": "^3.2.45"
   },
   "devDependencies": {
     "prettier": "^2.7.1"

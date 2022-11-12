@@ -4,7 +4,7 @@ IMAGE_TAG = $(TAG:v%=%)
 IMAGE_NAME = hojas/fe-stack
 
 image:
-	docker build -t $(IMAGE_NAME):latest -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile .
+	docker buildx build -t $(IMAGE_NAME):latest -t $(IMAGE_NAME):$(IMAGE_TAG) --platform linux/amd64,linux/arm64 . --push
 	docker image prune -f
 
 push:
