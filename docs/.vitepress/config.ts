@@ -1,8 +1,8 @@
 /** @type {import('vitepress').UserConfig} */
 export default {
   lang: 'zh-Hans',
-  title: '陈远翔前端博客',
-  titleTemplate: '分享前端开发技术和 Node.js 开发技术',
+  title: '前端开发知识体系',
+  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - 陈远翔个人网站',
   description: '分享前端开发技术和 Node.js 开发技术',
   markdown: {
     lineNumbers: true,

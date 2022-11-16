@@ -6,6 +6,10 @@ title: HTML
 
 https://www.w3school.com.cn/html/index.asp
 
+## 最佳实践
+
+https://github.com/hail2u/html-best-practices
+
 ## base 标签
 
 `<base>` HTML 元素指定用于文档中所有相对 URL 的基 URL。一个文档中只能有一个 `<base>` 元素，`<base>` 元素有两个属性：
