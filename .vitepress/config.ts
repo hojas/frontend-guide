@@ -4,6 +4,7 @@ export default {
   title: '前端开发知识体系',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术 - 陈远翔个人网站',
   description: '分享前端开发技术和 Node.js 开发技术',
+  srcDir: 'src',
   markdown: {
     lineNumbers: true,
   },
