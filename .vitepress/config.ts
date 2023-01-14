@@ -15,7 +15,7 @@ export default {
       { text: '首页', link: '/' },
       {
         text: '编程思想',
-        link: 'thinking/index',
+        link: 'thinking',
       },
       {
         text: '前端基础',
