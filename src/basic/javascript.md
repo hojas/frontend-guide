@@ -12,6 +12,50 @@ https://wangdoc.com/javascript/
 
 https://wangdoc.com/es6/
 
+## 原理
+
+[JavaScript 原理](how-javascript-works.md)
+
+## 元编程
+
+### 对象的可扩展能力
+
+对象数据属性的特性：`value`、`writable`、`enumerable` 和 `configurable`。
+
+对象访问器属性的特性：`get`、`set`、`enumerable` 和 `configurable`。
+
+`Object.defineProperty()` 和 `Object.defineProperties()` 可以修改属性特性，`Object.create()` 也可以在创建对象时设置属性特性。
+
+`Object.preventExtensions(obj)` 使对象不可扩展，即无法给对象添加新属性。
+
+`Object.isExtensible(obj)` 判断对象是否可扩展。
+
+`Object.seal(obj)` 使对象不可扩展，并且不能删除或配置已有属性，可写的已有属性依然可写。
+
+`Object.isSealed(obj)` 判断对象是否被封存。
+
+`Object.freeze()` 在封存对象的基础上，会把其全部自有属性设置为只读的，访问器属性的 set 不受影响。
+
+`Object.isFrozen(obj)` 判断对象是否被锁定。
+
+### 原型
+
+`Object.getPrototypeOf(obj)` 获取对象的原型。
+
+`o.isPrototypeOf(obj)` 判断对象 o 是否为 obj 的原型。
+
+`Object.setPrototypeOf(obj, o)` 设置 obj 的原型为 o。
+
+### 公认符号
+
+`Symbol.iterator` 和 `Symbol.asyncIterator` 使对象或类把自己变成可迭代对象和异步可迭代对象。
+
+`Symbol.hasInstance`：实现了 `[Symbol.hasInstance](x) {}` 方法的对象可以用于 `instanceof` 右侧参数。
+
+`Symbol.toStringTag`：实现了该属性的 class，`Object.prototype.toString.call(obj)` 会返回该属性的值。
+
+`Symbol.species`：是一个访问器属性，允许子类覆盖对象的默认构造函数。
+
 ## 箭头函数
 
 1. 没有 this

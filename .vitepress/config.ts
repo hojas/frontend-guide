@@ -14,20 +14,16 @@ export default {
     nav: [
       { text: '首页', link: '/' },
       {
+        text: '编程思想',
+        link: 'thinking/index',
+      },
+      {
         text: '前端基础',
         items: [
           { text: 'HTML', link: '/basic/html' },
           { text: 'CSS', link: '/basic/css' },
           { text: 'JavaScript', link: '/basic/javascript' },
           { text: 'TypeScript', link: '/basic/typescript' },
-        ],
-      },
-      {
-        text: '前端框架',
-        items: [
-          { text: 'Vue', link: '/framework/vue' },
-          { text: 'React', link: '/framework/react' },
-          { text: 'Angular', link: '/framework/angular' },
         ],
       },
       {
@@ -53,6 +49,14 @@ export default {
       {
         text: '计算机网络',
         link: '/network',
+      },
+      {
+        text: '前端框架',
+        items: [
+          { text: 'Vue', link: '/framework/vue' },
+          { text: 'React', link: '/framework/react' },
+          { text: 'Angular', link: '/framework/angular' },
+        ],
       },
       {
         text: '个人项目',
@@ -95,8 +99,8 @@ export default {
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     lastUpdatedText: '最后更新',
     footer: {
-      message: 'MIT Licensed',
-      copyright: 'Copyright © 2022-present hojas',
+      message: '前端开发知识体系',
+      copyright: 'Copyright © 2022-present chenyuanxiang.com',
     },
   },
 }
