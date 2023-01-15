@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读更多
-      link: thinking
+      link: thinking/generic-principles
     - theme: alt
       text: 本站源码
       link: https://github.com/hojas/fe-stack

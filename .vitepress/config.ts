@@ -15,7 +15,13 @@ export default {
       { text: '首页', link: '/' },
       {
         text: '编程思想',
-        link: 'thinking',
+        items: [
+          { text: '常见编程原则', link: '/thinking/generic-principles' },
+          {
+            text: '模块间/类编程原则',
+            link: '/thinking/inter-module-class-principles',
+          },
+        ],
       },
       {
         text: '前端基础',
