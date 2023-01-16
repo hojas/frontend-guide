@@ -41,7 +41,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: BAIDU_HM_CODE={{ secrets.BAIDU_HM_CODE }} pnpm run build
+        run: BAIDU_HM_CODE=${{ secrets.BAIDU_HM_CODE }} pnpm run build
 
       - name: Copy CNAME file
         uses: canastro/copy-file-action@master
