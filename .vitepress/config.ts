@@ -9,6 +9,20 @@ export default {
     lineNumbers: true,
   },
   lastUpdated: true,
+  head: [
+    [
+      'script',
+      {},
+      `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?${process.env.BAIDU_HM_CODE}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+      `,
+    ],
+  ],
   themeConfig: {
     outlineTitle: '文章导航',
     nav: [
@@ -36,40 +50,40 @@ export default {
         text: '浏览器原理',
         link: '/browser',
       },
-      {
-        text: '前端工程化',
-        link: '/engineering',
-      },
-      {
-        text: '性能优化',
-        link: '/performance',
-      },
+      // {
+      //   text: '前端工程化',
+      //   link: '/engineering',
+      // },
+      // {
+      //   text: '性能优化',
+      //   link: '/performance',
+      // },
       // {
       //   text: '移动端',
       //   link: '/mobile',
       // },
-      {
-        text: 'Node.js',
-        link: '/nodejs',
-      },
+      // {
+      //   text: 'Node.js',
+      //   link: '/nodejs',
+      // },
       {
         text: '计算机网络',
-        link: '/network',
+        link: 'https://xiaolincoding.com/network/',
       },
-      {
-        text: '前端框架',
-        items: [
-          { text: 'Vue', link: '/framework/vue' },
-          { text: 'React', link: '/framework/react' },
-          { text: 'Angular', link: '/framework/angular' },
-        ],
-      },
+      // {
+      //   text: '前端框架',
+      //   items: [
+      //     { text: 'Vue', link: '/framework/vue' },
+      //     { text: 'React', link: '/framework/react' },
+      //     { text: 'Angular', link: '/framework/angular' },
+      //   ],
+      // },
       {
         text: '个人项目',
         link: '/project',
       },
       {
-        text: '博客',
+        text: '博客文章',
         link: '/blog',
       },
     ],

@@ -12,10 +12,12 @@
     "serve": "vitepress serve --host 0.0.0.0 --port 3000"
   },
   "dependencies": {
+    "@giscus/vue": "^2.2.6",
     "vitepress": "^1.0.0-alpha.36",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@types/node": "^18.11.18",
     "prettier": "^2.8.3"
   }
 }
