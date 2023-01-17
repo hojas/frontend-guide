@@ -35,6 +35,10 @@ export default {
             text: '模块间/类编程原则',
             link: '/thinking/inter-module-class-principles',
           },
+          {
+            text: '模块/类编程原则',
+            link: '/thinking/module-class-principles',
+          },
         ],
       },
       {
