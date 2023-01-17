@@ -66,10 +66,15 @@ export default {
       //   text: '移动端',
       //   link: '/mobile',
       // },
-      // {
-      //   text: 'Node.js',
-      //   link: '/nodejs',
-      // },
+      {
+        text: 'Node.js',
+        items: [
+          {
+            text: '最佳实践',
+            link: 'https://github.com/goldbergyoni/nodebestpractices',
+          },
+        ],
+      },
       {
         text: '计算机网络',
         link: 'https://xiaolincoding.com/network/',
