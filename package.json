@@ -1,7 +1,7 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.25.0",
+  "packageManager": "pnpm@7.26.1",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@giscus/vue": "^2.2.6",
-    "vitepress": "^1.0.0-alpha.36",
+    "vitepress": "^1.0.0-alpha.40",
     "vue": "^3.2.45"
   },
   "devDependencies": {

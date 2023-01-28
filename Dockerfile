@@ -1,4 +1,4 @@
-FROM node:18.12.1-alpine AS builder
+FROM node:18.13.0-alpine AS builder
 
 ENV NODE_ENV=production
 WORKDIR /opt/app
@@ -6,7 +6,7 @@ COPY .npmrc package.json pnpm-lock.yaml ./
 RUN npm i -g pnpm && pnpm i
 
 
-FROM node:18.12.1-alpine
+FROM node:18.13.0-alpine
 
 RUN apk add --no-cache git
 

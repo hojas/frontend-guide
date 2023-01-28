@@ -30,7 +30,7 @@ export default {
       {
         text: '编程思想',
         items: [
-          { text: '常见编程原则', link: '/thinking/generic-principles' },
+          { text: '通用编程原则', link: '/thinking/generic-principles' },
           {
             text: '模块间/类编程原则',
             link: '/thinking/inter-module-class-principles',
