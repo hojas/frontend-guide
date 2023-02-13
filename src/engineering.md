@@ -55,6 +55,7 @@ title: 前端工程化
 1. [Docker](https://www.docker.com/)
 2. [Github Actions](https://github.com/features/actions)
 3. [Jenkins](https://www.jenkins.io/)
+4. [Sentry](https://sentry.io/)
 
 ## 开发框架
 

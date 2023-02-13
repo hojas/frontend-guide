@@ -1,10 +1,22 @@
 <script lang="ts" setup>
-import { useData } from 'vitepress'
+import { watch } from 'vue'
+import { useData, useRoute } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import Giscus from '@giscus/vue'
 
 const { isDark } = useData()
 const { Layout } = DefaultTheme
+
+const route = useRoute()
+watch(route, (route) => {
+  const iframe = document.querySelector<HTMLIFrameElement>(
+    'iframe.giscus-frame'
+  )
+  iframe?.contentWindow?.postMessage(
+    { giscus: { setConfig: { term: route.path } } },
+    'https://giscus.app'
+  )
+})
 </script>
 
 <template>

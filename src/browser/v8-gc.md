@@ -4,7 +4,7 @@ title: v8 垃圾回收
 
 # v8 垃圾回收
 
-> 垃圾回收器：Orinoco
+垃圾回收器：Orinoco
 
 ## 分代回收
 
@@ -15,11 +15,9 @@ title: v8 垃圾回收
 | 32   | 16MB   | 700MB  | 732MB  |
 | 64   | 32MB   | 1400MB | 1464MB |
 
-## 新生代
+## Minor GC (Scavenger)
 
-分为 `from-space` 和 `to-space`
-
-Scavenge 算法
+## Major GC (Mark-Compact)
 
 ## 老生代
 
@@ -34,3 +32,7 @@ Scavenge 算法
 并发 Concurrent
 
 并行 Parallel
+
+## 参考
+
+1. https://v8.dev/blog/tags/memory
