@@ -2,14 +2,20 @@
 export default {
   lang: 'zh-Hans',
   title: '前端开发知识体系',
-  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - 陈远翔个人网站',
   description: '分享前端开发技术和 Node.js 开发技术',
+  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - 前端开发技术体系',
   srcDir: 'src/docs',
   markdown: {
     lineNumbers: true,
   },
   lastUpdated: true,
   head: [
+    [
+      'meta',
+      {
+        keywords: '前端开发,前端博客,Node.js开发',
+      },
+    ],
     [
       'script',
       {},

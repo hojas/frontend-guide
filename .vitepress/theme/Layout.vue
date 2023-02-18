@@ -8,7 +8,7 @@ const { isDark } = useData()
 const { Layout } = DefaultTheme
 
 const route = useRoute()
-watch(route, (route) => {
+watch(route, route => {
   const iframe = document.querySelector<HTMLIFrameElement>(
     'iframe.giscus-frame'
   )
