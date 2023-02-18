@@ -68,8 +68,12 @@ export default {
         ],
       },
       {
-        text: '计算机网络',
-        link: 'https://xiaolincoding.com/network/',
+        text: '计算机基础',
+        link: 'https://xiaolincoding.com/',
+      },
+      {
+        text: '算法',
+        link: 'https://www.programmercarl.com/',
       },
       // {
       //   text: '前端框架',
@@ -81,17 +85,7 @@ export default {
       // },
       {
         text: '编程思想',
-        items: [
-          { text: '通用编程原则', link: '/thinking/generic-principles' },
-          {
-            text: '模块间/类编程原则',
-            link: '/thinking/inter-module-class-principles',
-          },
-          {
-            text: '模块/类编程原则',
-            link: '/thinking/module-class-principles',
-          },
-        ],
+        link: '/thinking',
       },
       {
         text: '个人项目',
