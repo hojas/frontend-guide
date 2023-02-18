@@ -12,10 +12,7 @@ https://wangdoc.com/javascript/
 
 https://wangdoc.com/es6/
 
-## 原理
-
-[JavaScript 原理](how-javascript-works.md)
-
+<!--
 ## 元编程
 
 ### 对象的可扩展能力
@@ -135,4 +132,4 @@ for..in 循环在其自身和继承的属性上进行迭代。所有其他的键
 
 常见的 macro-task：script（整体代码）、setTimeout、setInterval、 setImmediate、 I/O 操作、UI 交互等。
 
-常见的 micro-task：Promise、MutationObserver 等。
+常见的 micro-task：Promise、MutationObserver 等。 -->
