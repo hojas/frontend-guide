@@ -4,7 +4,7 @@ export default {
   title: '前端开发知识体系',
   titleTemplate: '分享前端开发技术和 Node.js 开发技术 - 陈远翔个人网站',
   description: '分享前端开发技术和 Node.js 开发技术',
-  srcDir: 'src',
+  srcDir: 'src/docs',
   markdown: {
     lineNumbers: true,
   },
@@ -27,20 +27,6 @@ export default {
     outlineTitle: '文章导航',
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '编程思想',
-        items: [
-          { text: '通用编程原则', link: '/thinking/generic-principles' },
-          {
-            text: '模块间/类编程原则',
-            link: '/thinking/inter-module-class-principles',
-          },
-          {
-            text: '模块/类编程原则',
-            link: '/thinking/module-class-principles',
-          },
-        ],
-      },
       {
         text: '前端基础',
         items: [
@@ -87,6 +73,20 @@ export default {
       //     { text: 'Angular', link: '/framework/angular' },
       //   ],
       // },
+      {
+        text: '编程思想',
+        items: [
+          { text: '通用编程原则', link: '/thinking/generic-principles' },
+          {
+            text: '模块间/类编程原则',
+            link: '/thinking/inter-module-class-principles',
+          },
+          {
+            text: '模块/类编程原则',
+            link: '/thinking/module-class-principles',
+          },
+        ],
+      },
       {
         text: '个人项目',
         link: '/project',
