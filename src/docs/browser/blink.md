@@ -4,6 +4,7 @@ title: Chrome Blink 渲染引擎
 
 <script setup>
 import ImgLoader from '../../components/img-loader.vue'
+import blink from '../assets/img/browser/embedded-blink.png'
 </script>
 
 # Chrome Blink 渲染引擎
@@ -17,7 +18,7 @@ Blink 是一个 web 平台渲染引擎，实现了所有在浏览器标签内渲
 5. 计算样式和布局
 6. 嵌入 Chrome Compositor 并绘制图形
 
-<ImgLoader src="../assets/img/browser/embedded-blink.png" alt=blink />
+<ImgLoader :src="blink" alt=blink />
 
 ## 参考
 
