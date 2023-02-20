@@ -13,7 +13,8 @@ export default {
     [
       'meta',
       {
-        keywords: '前端开发,前端博客,Node.js开发',
+        name: 'keywords',
+        content: '前端开发,前端博客,Node.js开发',
       },
     ],
     [
