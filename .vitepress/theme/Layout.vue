@@ -10,7 +10,7 @@ const { Layout } = DefaultTheme
 const route = useRoute()
 watch(route, route => {
   const iframe = document.querySelector<HTMLIFrameElement>(
-    'iframe.giscus-frame'
+    '.giscus-comments iframe'
   )
   iframe?.contentWindow?.postMessage(
     { giscus: { setConfig: { term: route.path } } },
@@ -22,7 +22,7 @@ watch(route, route => {
 <template>
   <Layout>
     <template #doc-after>
-      <div class="comments">
+      <div class="giscus-comments">
         <Giscus
           repo="hojas/fe-stack-comments"
           repo-id="R_kgDOIyG1Cg"
