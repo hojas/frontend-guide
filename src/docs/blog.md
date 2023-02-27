@@ -6,5 +6,6 @@ title: 博客文章
 
 ## 2023
 
-- [npm link 用法简介](blog/1)
+- [手写实现 Vue 3 的响应式原理](blog/3)
 - [手写实现 Vue 2 的响应式原理](blog/2)
+- [npm link 用法简介](blog/1)
