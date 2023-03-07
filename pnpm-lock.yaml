@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@giscus/vue': ^2.2.8
   '@mermaid-js/mermaid-mindmap': ^9.3.0
-  '@types/node': ^18.14.5
+  '@types/node': ^18.14.6
   mermaid: ~9.1.7
   prettier: ^2.8.4
   vitepress: 1.0.0-alpha.49
@@ -13,10 +13,10 @@ specifiers:
 devDependencies:
   '@giscus/vue': 2.2.8_vue@3.2.47
   '@mermaid-js/mermaid-mindmap': 9.3.0
-  '@types/node': 18.14.5
+  '@types/node': 18.14.6
   mermaid: 9.1.7
   prettier: 2.8.4
-  vitepress: 1.0.0-alpha.49_5kav6xpxue64omls5hlubwq6eu
+  vitepress: 1.0.0-alpha.49_jw3yxq6zsd6ndrqxxlt4tvgpeq
   vitepress-plugin-mermaid: 2.0.10_2nc3z7lwrvytclhm7cdy4po43e
   vue: 3.2.47
 
@@ -431,8 +431,8 @@ packages:
       non-layered-tidy-tree-layout: 2.0.2
     dev: true
 
-  /@types/node/18.14.5:
-    resolution: {integrity: sha512-CRT4tMK/DHYhw1fcCEBwME9CSaZNclxfzVMe7GsO6ULSwsttbj70wSiX6rZdIjGblu93sTJxLdhNIT85KKI7Qw==}
+  /@types/node/18.14.6:
+    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
     dev: true
 
   /@types/trusted-types/2.0.3:
@@ -450,7 +450,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.4_@types+node@18.14.5
+      vite: 4.1.4_@types+node@18.14.6
       vue: 3.2.47
     dev: true
 
@@ -1398,7 +1398,7 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /vite/4.1.4_@types+node@18.14.5:
+  /vite/4.1.4_@types+node@18.14.6:
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1423,7 +1423,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.14.5
+      '@types/node': 18.14.6
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
@@ -1439,10 +1439,10 @@ packages:
       vitepress: ^0.21.6 || ^1.0.0 || ^1.0.0-alpha
     dependencies:
       mermaid: 9.1.7
-      vitepress: 1.0.0-alpha.49_5kav6xpxue64omls5hlubwq6eu
+      vitepress: 1.0.0-alpha.49_jw3yxq6zsd6ndrqxxlt4tvgpeq
     dev: true
 
-  /vitepress/1.0.0-alpha.49_5kav6xpxue64omls5hlubwq6eu:
+  /vitepress/1.0.0-alpha.49_jw3yxq6zsd6ndrqxxlt4tvgpeq:
     resolution: {integrity: sha512-3nUZJow4qL8NHRWYatqqVj45AJDxWst/TuOj+IbQRhxesEswa+Fpwayj9/FxzRzBl665fuiG5y+QeVhOeUm0OA==}
     hasBin: true
     dependencies:
@@ -1453,7 +1453,7 @@ packages:
       '@vueuse/core': 9.13.0_vue@3.2.47
       body-scroll-lock: 4.0.0-beta.0
       shiki: 0.14.1
-      vite: 4.1.4_@types+node@18.14.5
+      vite: 4.1.4_@types+node@18.14.6
       vue: 3.2.47
     transitivePeerDependencies:
       - '@algolia/client-search'
