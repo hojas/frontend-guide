@@ -10,9 +10,9 @@ const { Layout } = DefaultTheme
 const route = useRoute()
 watch(route, route => {
   const iframe = document.querySelector<HTMLIFrameElement>(
-    '.giscus-comments iframe'
+    '.giscus-comments giscus-widget'
   )
-  iframe?.contentWindow?.postMessage(
+  iframe?.iframeRef.contentWindow.postMessage(
     { giscus: { setConfig: { term: route.path } } },
     'https://giscus.app'
   )
@@ -43,7 +43,7 @@ watch(route, route => {
 </template>
 
 <style scoped>
-.comments {
-  margin-top: 2rem;
+.giscus-comments {
+  margin-top: 5rem;
 }
 </style>

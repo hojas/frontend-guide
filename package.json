@@ -1,7 +1,7 @@
 {
   "name": "fe-stack",
   "version": "1.0.0",
-  "packageManager": "pnpm@7.29.0",
+  "packageManager": "pnpm@7.29.1",
   "main": "index.js",
   "repository": "git@github.com:hojas/fe-stack.git",
   "author": "hojas <cyxhuan9@163.com>",
@@ -17,7 +17,7 @@
     "@types/node": "^18.14.6",
     "mermaid": "~9.1.7",
     "prettier": "^2.8.4",
-    "vitepress": "1.0.0-alpha.49",
+    "vitepress": "1.0.0-alpha.50",
     "vitepress-plugin-mermaid": "^2.0.10",
     "vue": "^3.2.47"
   }

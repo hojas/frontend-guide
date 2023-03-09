@@ -9,8 +9,8 @@ hero:
     alt: 前端开发知识体系
   actions:
     - theme: brand
-      text: 阅读更多
-      link: basic/html
+      text: 关于我
+      link: about
     - theme: alt
       text: 本站源码
       link: https://github.com/hojas/fe-stack
