@@ -13,7 +13,7 @@ hero:
       link: about
     - theme: alt
       text: 本站源码
-      link: https://github.com/hojas/fe-stack
+      link: https://github.com/hojas/frontend-guide
 features:
   - title: 前端基础知识
     details: HTML、CSS、JavaScript、TypeScript...
