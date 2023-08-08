@@ -24,5 +24,6 @@ title: 前端开发基础知识
 
 ## TypeScript
 
-1. https://www.typescriptlang.org/docs/
-2. https://github.com/type-challenges/type-challenges
+1. https://wangdoc.com/typescript/
+2. https://www.typescriptlang.org/docs/
+3. https://github.com/type-challenges/type-challenges
