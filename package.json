@@ -1,7 +1,7 @@
 {
   "name": "frontend-guide",
   "type": "module",
-  "packageManager": "pnpm@8.7.0",
+  "packageManager": "yarn@1.22.19",
   "author": "hojas <cyxhuan9@163.com>",
   "license": "MIT",
   "scripts": {
