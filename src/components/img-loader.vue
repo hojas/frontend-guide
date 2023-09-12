@@ -3,13 +3,13 @@ defineProps<{ src: string; alt?: string }>()
 </script>
 
 <template>
-  <div>
+  <div class="img-loader">
     <img :src="src" :alt="alt">
   </div>
 </template>
 
 <style scoped>
-div {
+.img-loader {
   padding: 10px;
   background: #fff;
 }

@@ -32,4 +32,8 @@ export const nav: DefaultTheme.NavItem[] = [
     text: '算法',
     link: 'https://www.programmercarl.com/',
   },
+  {
+    text: '工具推荐',
+    link: '/tools',
+  },
 ]

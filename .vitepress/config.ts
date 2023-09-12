@@ -9,7 +9,7 @@ export default withMermaid({
   lang: 'zh-Hans',
   title: 'Frontend Guide',
   description: '分享前端开发技术和 Node.js 开发技术',
-  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - FrontendGuide',
+  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - Frontend Guide',
   srcDir: 'src/docs',
   markdown: { lineNumbers: true },
   lastUpdated: true,
@@ -21,7 +21,7 @@ export default withMermaid({
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     lastUpdatedText: '最后更新',
     footer: {
-      message: 'FrontendGuide',
+      message: 'Frontend Guide',
       copyright: 'Copyright © 2022-present frontend-guide',
     },
   },
