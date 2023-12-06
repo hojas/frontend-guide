@@ -22,7 +22,7 @@ export default withMermaid({
     lastUpdatedText: '最后更新',
     footer: {
       message: 'Frontend Guide',
-      copyright: 'Copyright © 2022-present frontend-guide',
+      copyright: 'Copyright © 2023-present frontend-guide',
     },
   },
 })
