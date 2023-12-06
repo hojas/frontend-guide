@@ -1,3 +1,3 @@
-# Frontend Guide
+# FrontendGuide
 
 Full Frontend Development Guide.

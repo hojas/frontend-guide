@@ -7,9 +7,9 @@ import { sidebar } from './sidebar'
 export default withMermaid({
   base: '/frontend-guide/',
   lang: 'zh-Hans',
-  title: 'Frontend Guide',
+  title: 'FrontendGuide',
   description: '分享前端开发技术和 Node.js 开发技术',
-  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - Frontend Guide',
+  titleTemplate: '分享前端开发技术和 Node.js 开发技术 - FrontendGuide',
   srcDir: 'src/docs',
   markdown: { lineNumbers: true },
   lastUpdated: true,
@@ -21,8 +21,7 @@ export default withMermaid({
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     lastUpdatedText: '最后更新',
     footer: {
-      message: 'Frontend Guide',
-      copyright: 'Copyright © 2023-present frontend-guide',
+      copyright: 'Copyright © 2023-present FrontendGuide',
     },
   },
 })

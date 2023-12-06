@@ -1,26 +1,26 @@
 ---
 layout: home
 hero:
-  name: Frontend Guide
-  text: 分享前端开发技术和 Node.js 开发技术
-  tagline: 包括前端基础，浏览器原理，前端工程化，Node.js开发等
+  name: FrontendGuide
+  # text: 分享前端开发技术和 Node.js 开发技术
+  tagline: 分享前端开发技术和 Node.js 开发技术
   image:
     src: /home.gif
     alt: 前端开发知识体系
   actions:
     - theme: brand
-      text: 关于我
-      link: about
+      text: 开始阅读
+      link: browser
     - theme: alt
       text: 本站源码
       link: https://github.com/hojas/frontend-guide
 features:
-  - title: 前端基础知识
-    details: HTML、CSS、JavaScript、TypeScript...
   - title: 浏览器原理
-    details: 浏览器架构、Blink 渲染引擎、V8 引擎...
+    details: 事件循环、浏览器渲染原理...
+  - title: 前端框架
+    details: 框架实现原理...
   - title: 前端工程化
-    details: 构建工具、代码质量工具、依赖管理工具、测试工具...
+    details: 项目构建、代码质量、测试...
   - title: Node.js 开发
-    details: 模块化原理、事件循环、Web 框架...
+    details: 模块化原理、事件循环...
 ---
