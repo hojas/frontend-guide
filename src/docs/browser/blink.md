@@ -18,7 +18,7 @@ Blink 是一个 web 平台渲染引擎，实现了所有在浏览器标签内渲
 5. 计算样式和布局
 6. 嵌入 Chrome Compositor 并绘制图形
 
-<ImgLoader :src="blink" alt=blink />
+<ImgLoader :src="blink" />
 
 ## 参考
 

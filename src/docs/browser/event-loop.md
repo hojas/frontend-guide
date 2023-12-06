@@ -4,6 +4,9 @@ title: 浏览器事件循环
 
 <script setup>
 import ImgLoader from '../../components/img-loader.vue'
+import img1 from './event-loop/1.png'
+import img2 from './event-loop/2.png'
+import img3 from './event-loop/3.png'
 </script>
 
 # 浏览器事件循环
@@ -69,7 +72,7 @@ import ImgLoader from '../../components/img-loader.vue'
 
 整个过程，被称之为事件循环（消息循环）。
 
-<ImgLoader src="./event-loop/1.png" />
+<ImgLoader :src="img1" />
 
 ## 什么是异步？
 
@@ -81,13 +84,13 @@ import ImgLoader from '../../components/img-loader.vue'
 
 如果让渲染主线程等待这些任务的时机达到，就会导致主线程⻓期处于「阻塞」的状态，从⽽导致浏览器「卡死」。
 
-<ImgLoader src="./event-loop/2.png" />
+<ImgLoader :src="img2" />
 
 **渲染主线程承担着极其重要的⼯作，⽆论如何都不能阻塞！**
 
 因此，浏览器选择**异步**来解决这个问题：
 
-<ImgLoader src="./event-loop/3.png" />
+<ImgLoader :src="img3" />
 
 使⽤异步的⽅式，渲染主线程永不阻塞。
 
