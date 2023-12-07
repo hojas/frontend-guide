@@ -3,7 +3,7 @@ title: 浏览器事件循环
 ---
 
 <script setup>
-import ImgLoader from '../../components/img-loader.vue'
+import ImgLoader from '../../components/ImgLoader.vue'
 import img1 from './event-loop/1.png'
 import img2 from './event-loop/2.png'
 import img3 from './event-loop/3.png'

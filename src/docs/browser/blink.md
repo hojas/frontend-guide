@@ -3,7 +3,7 @@ title: Chrome Blink 渲染引擎
 ---
 
 <script setup>
-import ImgLoader from '../../components/img-loader.vue'
+import ImgLoader from '../../components/ImgLoader.vue'
 import blink from '../assets/img/browser/embedded-blink.png'
 </script>
 
