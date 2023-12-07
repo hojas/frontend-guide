@@ -1,5 +1,6 @@
 ---
 layout: home
+title: FrontendGuide | 分享前端开发技术和 Node.js 开发技术
 hero:
   name: FrontendGuide
   # text: 分享前端开发技术和 Node.js 开发技术
@@ -24,3 +25,10 @@ features:
   - title: Node.js 开发
     details: 模块化原理、事件循环...
 ---
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+}
+</style>
