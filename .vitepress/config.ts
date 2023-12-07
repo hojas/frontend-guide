@@ -5,7 +5,7 @@ import { nav } from './nav'
 import { sidebar } from './sidebar'
 
 export default withMermaid({
-  base: '/frontend-guide/',
+  base: '/',
   lang: 'zh-Hans',
   title: 'FrontendGuide',
   description: '分享前端开发技术和 Node.js 开发技术',
