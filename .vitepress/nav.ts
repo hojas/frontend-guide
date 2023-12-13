@@ -12,6 +12,10 @@ export const nav: DefaultTheme.NavItem[] = [
   // },
   // { text: 'Node.js', link: '/nodejs' },
   {
+    text: '手搓源码',
+    link: '/source-code',
+  },
+  {
     text: '学习资源',
     link: '/resource',
   },

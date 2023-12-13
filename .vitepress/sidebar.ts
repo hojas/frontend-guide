@@ -12,4 +12,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/source-code': [
+    {
+      text: '手搓源码',
+      items: [
+        { text: '深拷贝', link: '/source-code/deep-copy.html' },
+      ],
+    },
+  ],
 }
