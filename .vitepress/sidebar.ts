@@ -1,6 +1,14 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Sidebar = {
+  '/javascript': [
+    {
+      text: 'JavaScript',
+      items: [
+        { text: '数据类型', link: '/javascript/type.html' },
+      ],
+    },
+  ],
   '/browser': [
     {
       text: '浏览器原理',
@@ -14,7 +22,7 @@ export const sidebar: DefaultTheme.Sidebar = {
   ],
   '/source-code': [
     {
-      text: '手搓源码',
+      text: '手搓代码',
       items: [
         { text: '深拷贝', link: '/source-code/deep-copy.html' },
       ],

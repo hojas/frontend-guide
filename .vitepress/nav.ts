@@ -2,6 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/' },
+  { text: 'JavaScript', link: '/javascript.html' },
   { text: '浏览器原理', link: '/browser.html' },
   // { text: '前端框架', link: '/frameworks' },
   // { text: '前端工程化', link: '/engineering' },
@@ -12,7 +13,7 @@ export const nav: DefaultTheme.NavItem[] = [
   // },
   // { text: 'Node.js', link: '/nodejs' },
   {
-    text: '手搓源码',
+    text: '手搓代码',
     link: '/source-code',
   },
   {
