@@ -9,6 +9,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/typescript': [
+    {
+      text: 'TypeScript',
+      items: [
+        { text: '工具类型', link: '/typescript/utility-types.html' },
+      ],
+    },
+  ],
   '/browser': [
     {
       text: '浏览器原理',
