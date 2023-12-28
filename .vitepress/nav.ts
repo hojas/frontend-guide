@@ -2,6 +2,7 @@ import type { DefaultTheme } from 'vitepress'
 
 export const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/' },
+  { text: 'ECMAScript', link: '/ecmascript.html' },
   { text: 'JavaScript', link: '/javascript.html' },
   { text: 'TypeScript', link: '/typescript.html' },
   { text: '浏览器原理', link: '/browser.html' },

@@ -1,6 +1,14 @@
 import type { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Sidebar = {
+  '/ecmascript': [
+    {
+      text: 'ECMAScript',
+      items: [
+        { text: '2023', link: '/ecmascript/2023.html' },
+      ],
+    },
+  ],
   '/javascript': [
     {
       text: 'JavaScript',
