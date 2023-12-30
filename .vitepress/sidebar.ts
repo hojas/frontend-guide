@@ -31,8 +31,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '进程和线程', link: '/browser/process-and-thread.html' },
         { text: '事件循环', link: '/browser/event-loop.html' },
-        // { text: 'blink 渲染引擎', link: '/browser/blink.html' },
-        // { text: 'v8 引擎简介', link: '/browser/v8.html' },
+        { text: '页面渲染原理', link: '/browser/rendering.html' },
       ],
     },
   ],

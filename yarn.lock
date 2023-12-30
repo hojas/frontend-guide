@@ -138,22 +138,22 @@
     "@algolia/logger-common" "4.20.0"
     "@algolia/requester-common" "4.20.0"
 
-"@antfu/eslint-config@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.npmmirror.com/@antfu/eslint-config/-/eslint-config-2.6.0.tgz#5318a97c46889a527e3a9d4b74ae39725b0b4809"
-  integrity sha512-OSRD/5KarXbzEhiVBWu8NcRTW7aDsuvwvBBMbpGAtCTJDS97wATT2Xx+t2T26HGNuwz0TZDi5mNTwWCm7vJORQ==
+"@antfu/eslint-config@^2.6.1":
+  version "2.6.1"
+  resolved "https://registry.npmmirror.com/@antfu/eslint-config/-/eslint-config-2.6.1.tgz#0aaadd13d09ed6695abe360bf7e75658f55dfd44"
+  integrity sha512-hj7TTLXLLyk4YHp6SC0G3NTpGyn+5v9EHX3K8JMwz8qIQZnOSzpU8xQ4PcJW3wD3qePVoGDa1Q9QvYCKplIStQ==
   dependencies:
     "@antfu/eslint-define-config" "^1.23.0-2"
     "@antfu/install-pkg" "^0.3.1"
     "@eslint-types/jsdoc" "46.8.2-1"
-    "@eslint-types/typescript-eslint" "^6.12.0"
-    "@eslint-types/unicorn" "^49.0.0"
+    "@eslint-types/typescript-eslint" "^6.16.0"
+    "@eslint-types/unicorn" "^50.0.1"
     "@stylistic/eslint-plugin" "^1.5.1"
-    "@typescript-eslint/eslint-plugin" "^6.15.0"
-    "@typescript-eslint/parser" "^6.15.0"
+    "@typescript-eslint/eslint-plugin" "^6.16.0"
+    "@typescript-eslint/parser" "^6.16.0"
     eslint-config-flat-gitignore "^0.1.2"
     eslint-merge-processors "^0.1.0"
-    eslint-plugin-antfu "^2.1.0"
+    eslint-plugin-antfu "^2.1.1"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-i "^2.29.1"
     eslint-plugin-jsdoc "^46.9.1"
@@ -383,15 +383,15 @@
   resolved "https://registry.npmmirror.com/@eslint-types/jsdoc/-/jsdoc-46.8.2-1.tgz#c1d9ec9ce032f0ad3a943613c346a648bcad9063"
   integrity sha512-FwD7V0xX0jyaqj8Ul5ZY+TAAPohDfVqtbuXJNHb+OIv1aTIqZi5+Zn3F2UwQ5O3BnQd2mTduyK0+HjGx3/AMFg==
 
-"@eslint-types/typescript-eslint@^6.12.0":
-  version "6.12.0"
-  resolved "https://registry.npmmirror.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.12.0.tgz#627fa63eb84ad6fc9279210fccf379599e4f53fb"
-  integrity sha512-N8cbOYjyFl2BFgDhDgHhTGpgiMkFg0CoITG5hdBm9ZGmcEgUvFBnHvHG7qJl3qVEmFnoKUdfSAcr7MRb2/Jxvw==
+"@eslint-types/typescript-eslint@^6.16.0":
+  version "6.16.0"
+  resolved "https://registry.npmmirror.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.16.0.tgz#c0eebf2b81eb09f6560f7f11bcddff5f39f2c6c9"
+  integrity sha512-gLmHCSeeNtHfWJtAO5pBr4hD0aV60GyPDKJQm2JxlBJBoytJoKezan4Ak7FE9BsewaB+W3JQwsllspirHbHKLw==
 
-"@eslint-types/unicorn@^49.0.0":
-  version "49.0.0"
-  resolved "https://registry.npmmirror.com/@eslint-types/unicorn/-/unicorn-49.0.0.tgz#54a236ba569d3f4ff0d3c57466cd81269b18a342"
-  integrity sha512-NfXSZIsPFRD2fwTDZQj8SaXqS/rXjB5foxMraLovyrYGXiQK2y0780drDKYYSVbqvco29QIYoZNmnKTUkzZMvQ==
+"@eslint-types/unicorn@^50.0.1":
+  version "50.0.1"
+  resolved "https://registry.npmmirror.com/@eslint-types/unicorn/-/unicorn-50.0.1.tgz#f11633d6355e61cb249c74a0d88818153314b7c3"
+  integrity sha512-nuJuipTNcg9f+oxZ+3QZw4tuDLmir4RJOPfM/oujgToiy1s+tePDZhwg5jUGc3q8OzTtPbVpsFSYX7QApjO3EA==
 
 "@eslint/eslintrc@^2.1.4":
   version "2.1.4"
@@ -652,10 +652,10 @@
   resolved "https://registry.npmmirror.com/@types/ms/-/ms-0.7.34.tgz#10964ba0dee6ac4cd462e2795b6bebd407303433"
   integrity sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==
 
-"@types/node@^20.10.5":
-  version "20.10.5"
-  resolved "https://registry.npmmirror.com/@types/node/-/node-20.10.5.tgz#47ad460b514096b7ed63a1dae26fad0914ed3ab2"
-  integrity sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==
+"@types/node@^20.10.6":
+  version "20.10.6"
+  resolved "https://registry.npmmirror.com/@types/node/-/node-20.10.6.tgz#a3ec84c22965802bf763da55b2394424f22bfbb5"
+  integrity sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -684,7 +684,7 @@
   resolved "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@typescript-eslint/eslint-plugin@^6.15.0":
+"@typescript-eslint/eslint-plugin@^6.16.0":
   version "6.16.0"
   resolved "https://registry.npmmirror.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.16.0.tgz#cc29fbd208ea976de3db7feb07755bba0ce8d8bc"
   integrity sha512-O5f7Kv5o4dLWQtPX4ywPPa+v9G+1q1x8mz0Kr0pXUtKsevo+gIJHLkGc8RxaZWtP8RrhwhSNIWThnW42K9/0rQ==
@@ -701,7 +701,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/parser@^6.15.0":
+"@typescript-eslint/parser@^6.16.0":
   version "6.16.0"
   resolved "https://registry.npmmirror.com/@typescript-eslint/parser/-/parser-6.16.0.tgz#36f39f63b126aa25af2ad2df13d9891e9fd5b40c"
   integrity sha512-H2GM3eUo12HpKZU9njig3DF5zJ58ja6ahj1GoHEHOgQvYxzoFJJEvC1MQ7T2l9Ha+69ZSOn7RTxOdpC/y3ikMw==
@@ -1688,7 +1688,7 @@ eslint-module-utils@^2.8.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-antfu@^2.1.0:
+eslint-plugin-antfu@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmmirror.com/eslint-plugin-antfu/-/eslint-plugin-antfu-2.1.1.tgz#361fa6bda30b0e5c93add6e4614df552e4c8afca"
   integrity sha512-HCPo3IP15/gOaruIb1ce6R4LUv/MKBZCmWzqYiLGDFW43WW4juPURnjaQIE3AgWNSoCURqD3wxerXYKzokKTgA==

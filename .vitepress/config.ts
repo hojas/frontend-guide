@@ -14,11 +14,15 @@ export default withMermaid({
   lastUpdated: true,
   head,
   themeConfig: {
-    outline: { label: '文章导航' },
+    outline: { label: '文章导航', previous: '上一篇', next: '下一篇' },
     nav,
     sidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
     lastUpdatedText: '最后更新',
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
     footer: {
       copyright: 'Copyright © 2023-present FrontendGuide',
     },

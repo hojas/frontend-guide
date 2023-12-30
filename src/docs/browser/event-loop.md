@@ -1,5 +1,5 @@
 ---
-title: 浏览器事件循环
+title: 浏览器事件循环原理
 ---
 
 <script setup>
@@ -9,7 +9,7 @@ import img2 from './event-loop/2.png'
 import img3 from './event-loop/3.png'
 </script>
 
-# 浏览器事件循环
+# 浏览器事件循环原理
 
 ## 浏览器的进程
 
