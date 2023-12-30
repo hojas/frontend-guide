@@ -485,12 +485,6 @@ type T2 = Uppercase<'foo' | 'bar'>
 // type T2 = "FOO" | "BAR"
 ```
 
-源码实现：
-
-```ts
-type Uppercase<S extends string> = intrinsic
-```
-
 ### Lowercase\<StringType>
 
 将字符串转换为小写字母。
@@ -506,15 +500,7 @@ type T2 = Lowercase<'foo' | 'BAR'>
 // type T2 = "foo" | "bar"
 ```
 
-源码实现：
-
-```ts
-type Lowercase<S extends string> = intrinsic
-```
-
 ### Capitalize\<StringType>
-
-> 本征字符串操作类型。
 
 将字符串的首字母转换为大写。
 
@@ -522,26 +508,12 @@ type Lowercase<S extends string> = intrinsic
 type capitalized = Capitalize<'hello world'> // expected to be 'Hello world'
 ```
 
-源码实现：
-
-```ts
-type Capitalize<S extends string> = intrinsic
-```
-
 ### Uncapitalize\<StringType>
-
-> 本征字符串操作类型。
 
 将字符串的首字母转换为小写。
 
 ```ts
 type uncapitalized = Uncapitalize<'Hello World'> // expected to be 'hello World'
-```
-
-源码实现：
-
-```ts
-type Uncapitalize<S extends string> = intrinsic
 ```
 
 ## 参考
