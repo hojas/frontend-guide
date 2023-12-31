@@ -1,8 +1,8 @@
 ---
-title: vue-router 路由
+title: vue 路由
 ---
 
-# vue-router 路由
+# vue 路由
 
 ## 完整的导航解析流程
 

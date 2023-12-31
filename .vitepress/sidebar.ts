@@ -14,6 +14,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: 'JavaScript',
       items: [
         { text: '数据类型', link: '/javascript/type.html' },
+        { text: 'async/await的原理', link: '/javascript/async-await.html' },
       ],
     },
   ],
@@ -22,6 +23,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: 'TypeScript',
       items: [
         { text: '工具类型', link: '/typescript/utility-types.html' },
+      ],
+    },
+  ],
+  '/vue': [
+    {
+      text: 'Vue',
+      items: [
+        { text: 'vue-router', link: '/vue/vue-router.html' },
       ],
     },
   ],
@@ -39,6 +48,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '手搓代码',
       items: [
+        { text: '音频可视化的实现', link: '/source-code/voice-visualization.html' },
         { text: '深拷贝', link: '/source-code/deep-copy.html' },
       ],
     },
