@@ -31,7 +31,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: 'Vue',
       items: [
         { text: '响应式原理', link: '/vue/reactivity.html' },
-        // { text: 'Diff 算法', link: '/vue/diff.html' },
+        { text: 'Diff 算法', link: '/vue/diff.html' },
         // { text: '路由', link: '/vue/router.html' },
       ],
     },
