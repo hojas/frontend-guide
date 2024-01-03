@@ -213,7 +213,7 @@ function patchKeyedChildren(
       }
       else {
         // key-less node, try to locate a key-less node of the same type
-        // 旧子节点的 Key 不存在，则遍历所有新的子节点
+        // 无 key 的节点，尝试查找相同类型的无 key 的节点
         for (j = s2; j <= e2; j++) {
           if (
             newIndexToOldIndexMap[j - s2] === 0
