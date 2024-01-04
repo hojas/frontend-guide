@@ -9,6 +9,9 @@
     "build": "vitepress build",
     "serve": "vitepress serve --host 0.0.0.0 --port 3000"
   },
+  "dependencies": {
+    "@giscus/vue": "^2.4.0"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
     "@mermaid-js/mermaid-mindmap": "^9.3.0",
@@ -18,8 +21,5 @@
     "typescript": "^5.3.3",
     "vitepress": "^1.0.0-rc.35",
     "vitepress-plugin-mermaid": "^2.0.16"
-  },
-  "dependencies": {
-    "@giscus/vue": "^2.4.0"
   }
 }
