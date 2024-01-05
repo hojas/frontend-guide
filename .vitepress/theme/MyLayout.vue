@@ -4,6 +4,15 @@ import DefaultTheme from 'vitepress/theme'
 import Giscus from '@giscus/vue'
 
 const { Layout } = DefaultTheme
+
+const localStorage = globalThis.localStorage || {
+  getItem() {
+    return null
+  },
+  setItem() {
+    return null
+  },
+}
 const originalSetItem = localStorage.setItem
 
 const theme = ref('dark_dimmed')
@@ -12,7 +21,7 @@ const theme = ref('dark_dimmed')
  * Set theme based on localStorage and system
  */
 function setTheme() {
-  const mode = localStorage.getItem('vitepress-theme-appearance')
+  const mode = window.localStorage.getItem('vitepress-theme-appearance')
 
   if (mode === 'light') {
     // light mode

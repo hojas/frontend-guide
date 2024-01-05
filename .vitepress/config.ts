@@ -24,7 +24,7 @@ export default withMermaid({
       next: '下一篇',
     },
     footer: {
-      copyright: 'Copyright © 2023-present FrontendGuide',
+      copyright: 'Copyright © 2024-present FrontendGuide',
     },
   },
 })
