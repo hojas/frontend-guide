@@ -26,7 +26,7 @@ const targetMap = new WeakMap()
 //     proxy.name = 'Jack'
 //   })
 // })
-const activeEffectStack = []
+let activeEffect
 
 /**
  * 收集依赖
@@ -34,10 +34,7 @@ const activeEffectStack = []
  * @params {key} 对象的属性名称
  */
 function track(target, key) {
-  // 获取当前的 effect
-  const effect = activeEffectStack[activeEffectStack.length - 1]
-
-  if (effect) {
+  if (activeEffect) {
     // 获取当前对象的依赖
     let depsMap = targetMap.get(target)
     // 如果没有依赖，则初始化依赖
@@ -51,10 +48,10 @@ function track(target, key) {
       depsMap.set(key, (dep = new Set()))
 
     // 如果当前 effect 不在依赖中，则添加依赖
-    if (!dep.has(effect)) {
-      dep.add(effect)
+    if (!dep.has(activeEffect)) {
+      dep.add(activeEffect)
       // 添加清除依赖的方法
-      effect.deps.push(dep)
+      activeEffect.deps.push(dep)
     }
   }
 }
@@ -85,7 +82,7 @@ function trigger(target, key) {
         // 当设置 proxy.name 时，会触发 proxy.name 的 setter 函数
         // setter 函数会触发 trigger 函数，trigger 函数会执行 proxy.name 的依赖
         // 由于此时 proxy.name 的依赖是当前正在执行的副作用函数，所以会导致副作用函数递归执行
-        // 所以需要使用 activeEffectStack 来避免副作用函数递归执行
+        // 所以需要使用 activeEffect 来避免副作用函数递归执行
         if (effect !== activeEffect)
           effects.add(effect)
       })
@@ -113,42 +110,28 @@ function trigger(target, key) {
  * @params {options} 副作用函数的配置
  */
 function effect(fn, options = {}) {
-  const effect = createReactiveEffect(fn, options)
-  // 如果不是懒执行，则立即执行
-  if (!options.lazy)
-    effect()
-  return effect
-}
-
-/**
- * 创建副作用函数
- * @params {fn} 副作用函数
- * @params {options} 副作用函数的配置
- */
-function createReactiveEffect(fn, options) {
-  const effect = function reactiveEffect() {
-    // 如果当前副作用函数不是懒执行，则执行副作用函数
-    if (!effect.active)
-      return options.scheduler ? undefined : fn()
-
-    // 避免副作用函数递归执行
-    if (!activeEffectStack.includes(effect)) {
-      cleanup(effect)
-      try {
-        activeEffectStack.push(effect)
-        return fn()
-      }
-      finally {
-        activeEffectStack.pop()
-      }
-    }
+  function effectFn() {
+    cleanup(effectFn)
+    // 当调用副作用函数时，将当前副作用函数存储到全局变量中
+    activeEffect = effectFn
+    const result = fn()
+    return result
   }
 
-  effect.deps = []
-  effect.active = true
-  effect.options = options
+  // 将 options 挂载到副作用函数上
+  effectFn.options = options
 
-  return effect
+  // activeEffect.deps 用来存储所有与该副作用函数相关的依赖集合
+  effectFn.deps = []
+
+  if (!options.lazy) {
+    // 如果配置项中没有 lazy 属性，则立即执行副作用函数
+    effectFn()
+  }
+  else {
+    // 否则返回副作用函数
+    return effectFn
+  }
 }
 
 /**
@@ -157,10 +140,10 @@ function createReactiveEffect(fn, options) {
  */
 function cleanup(effect) {
   const { deps } = effect
-  if (deps.length) {
-    for (let i = 0; i < deps.length; i++)
-      deps[i].delete(effect)
-
+  if (deps && deps.length) {
+    // 从依赖中删除副作用函数
+    deps.forEach(dep => dep.delete(effect))
+    // 重置数组
     deps.length = 0
   }
 }
@@ -194,35 +177,6 @@ function createReactiveObject(target) {
  */
 function reactive(target) {
   return createReactiveObject(target)
-}
-
-/**
- * 创建响应式对象
- * ref 是 reactive 的语法糖
- *
- * @params {target} 响应式对象
- */
-function ref(raw) {
-  const obj = {
-    value: raw
-  }
-  return reactive(obj)
-}
-
-/**
- * 创建计算属性
- * 计算属性是一个副作用函数，所以需要使用 effect 函数来创建
- *
- * @params {fn} 计算属性的函数
- */
-function computed(fn) {
-  const runner = effect(fn, { lazy: true })
-  return {
-    effect: runner,
-    get value() {
-      return runner()
-    }
-  }
 }
 ```
 

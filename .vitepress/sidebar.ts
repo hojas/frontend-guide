@@ -14,7 +14,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: 'JavaScript',
       items: [
         { text: '数据类型', link: '/javascript/type' },
-        { text: 'async/await的原理', link: '/javascript/async-await' },
+        { text: 'async/await 的原理', link: '/javascript/async-await' },
       ],
     },
   ],
@@ -32,7 +32,20 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '响应式原理', link: '/vue/reactivity' },
         { text: 'Diff 算法', link: '/vue/diff' },
+        { text: 'computed 实现原理', link: '/vue/computed' },
+        { text: 'watch 实现原理', link: '/vue/watch' },
         // { text: '路由', link: '/vue/router' },
+      ],
+    },
+  ],
+  '/engineering': [
+    {
+      text: '工程化',
+      items: [
+        {
+          text: 'Webpack',
+          link: '/engineering/webpack',
+        },
       ],
     },
   ],
