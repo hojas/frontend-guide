@@ -18,7 +18,7 @@ export default withMermaid({
     nav,
     sidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
-    lastUpdatedText: '最后更新',
+    lastUpdatedText: '最近更新',
     docFooter: {
       prev: '上一篇',
       next: '下一篇',

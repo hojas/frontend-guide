@@ -5,19 +5,20 @@ export const nav: DefaultTheme.NavItem[] = [
   {
     text: '语言',
     items: [
-      { text: 'JavaScript', link: '/javascript.html' },
-      { text: 'ECMAScript', link: '/ecmascript.html' },
-      { text: 'TypeScript', link: '/typescript.html' },
+      { text: 'JavaScript', link: '/javascript' },
+      { text: 'ECMAScript', link: '/ecmascript' },
+      { text: 'TypeScript', link: '/typescript' },
     ],
   },
-  {
-    text: '前端框架',
-    items: [
-      { text: 'Vue', link: '/vue.html' },
-    ],
-  },
-  // { text: '前端工程化', link: '/engineering.html' },
-  { text: '浏览器原理', link: '/browser.html' },
+  { text: 'Vue', link: '/vue' },
+  // {
+  //   text: '前端框架',
+  //   items: [
+  //     { text: 'Vue', link: '/vue' },
+  //   ],
+  // },
+  // { text: '前端工程化', link: '/engineering' },
+  { text: '浏览器原理', link: '/browser' },
   // { text: '前端框架', link: '/frameworks' },
   // { text: '前端工程化', link: '/engineering' },
   // { text: '前端测试', link: '/testing' },
@@ -44,6 +45,6 @@ export const nav: DefaultTheme.NavItem[] = [
   // },
   {
     text: '关于',
-    link: '/about.html',
+    link: '/about',
   },
 ]
