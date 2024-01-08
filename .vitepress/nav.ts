@@ -10,7 +10,7 @@ export const nav: DefaultTheme.NavItem[] = [
       { text: 'TypeScript', link: '/typescript' },
     ],
   },
-  { text: 'Vue', link: '/vue' },
+  { text: 'Vue 实现原理', link: '/vue' },
   // {
   //   text: '前端框架',
   //   items: [
