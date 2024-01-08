@@ -44,7 +44,7 @@ export const nav: DefaultTheme.NavItem[] = [
   //   link: 'https://www.programmercarl.com/',
   // },
   {
-    text: '关于',
+    text: '关于我',
     link: '/about',
   },
 ]
