@@ -1,5 +1,5 @@
 ---
-title: ECMAScript 特性
+title: ECMAScript 版本特性
 ---
 
-# ECMAScript 特性
+# ECMAScript 版本特性

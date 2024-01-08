@@ -63,8 +63,10 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '手搓代码',
       items: [
-        { text: '音频可视化的实现', link: '/source-code/voice-visualization' },
+        { text: '防抖', link: '/source-code/debounce' },
+        { text: '节流', link: '/source-code/throttle' },
         { text: '深拷贝', link: '/source-code/deep-copy' },
+        { text: '音频可视化的实现', link: '/source-code/voice-visualization' },
       ],
     },
   ],

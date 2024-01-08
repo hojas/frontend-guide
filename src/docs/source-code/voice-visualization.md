@@ -8,6 +8,14 @@ title: 用 Vue 实现音频可视化
 
 https://developer.mozilla.org/en-US/docs/Web/API/AudioContext
 
+## 效果
+
+<script setup>
+import VoiceVisualization from './voice-visualization/voice-visualization.vue'
+</script>
+
+<VoiceVisualization audio-source="./voice-visualization/Immortal.mp3" />
+
 ## 代码
 
 ```vue
@@ -158,11 +166,3 @@ onBeforeUnmount(() => {
   }
 </style>
 ```
-
-## 效果
-
-<script setup>
-import VoiceVisualization from './voice-visualization/voice-visualization.vue'
-</script>
-
-<VoiceVisualization audio-source="./voice-visualization/Immortal.mp3" />

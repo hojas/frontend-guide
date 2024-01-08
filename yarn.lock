@@ -138,28 +138,28 @@
     "@algolia/logger-common" "4.22.0"
     "@algolia/requester-common" "4.22.0"
 
-"@antfu/eslint-config@^2.6.1":
-  version "2.6.1"
-  resolved "https://registry.npmmirror.com/@antfu/eslint-config/-/eslint-config-2.6.1.tgz#0aaadd13d09ed6695abe360bf7e75658f55dfd44"
-  integrity sha512-hj7TTLXLLyk4YHp6SC0G3NTpGyn+5v9EHX3K8JMwz8qIQZnOSzpU8xQ4PcJW3wD3qePVoGDa1Q9QvYCKplIStQ==
+"@antfu/eslint-config@^2.6.2":
+  version "2.6.2"
+  resolved "https://registry.npmmirror.com/@antfu/eslint-config/-/eslint-config-2.6.2.tgz#dd06ce50e50115929f824de230df3f9fc0dd1593"
+  integrity sha512-iHJtFrJLE0gc+oQGxe8I2vpXwhn2wAbz2kqunSPhiOt39yV6yuoE+NJt5nstzy0INKfjSL2teQKlr4g7E2bVhA==
   dependencies:
     "@antfu/eslint-define-config" "^1.23.0-2"
     "@antfu/install-pkg" "^0.3.1"
     "@eslint-types/jsdoc" "46.8.2-1"
-    "@eslint-types/typescript-eslint" "^6.16.0"
+    "@eslint-types/typescript-eslint" "^6.17.0"
     "@eslint-types/unicorn" "^50.0.1"
-    "@stylistic/eslint-plugin" "^1.5.1"
-    "@typescript-eslint/eslint-plugin" "^6.16.0"
-    "@typescript-eslint/parser" "^6.16.0"
+    "@stylistic/eslint-plugin" "^1.5.3"
+    "@typescript-eslint/eslint-plugin" "^6.18.0"
+    "@typescript-eslint/parser" "^6.18.0"
     eslint-config-flat-gitignore "^0.1.2"
     eslint-merge-processors "^0.1.0"
     eslint-plugin-antfu "^2.1.1"
     eslint-plugin-eslint-comments "^3.2.0"
     eslint-plugin-i "^2.29.1"
-    eslint-plugin-jsdoc "^46.9.1"
+    eslint-plugin-jsdoc "^48.0.2"
     eslint-plugin-jsonc "^2.11.2"
     eslint-plugin-markdown "^3.0.1"
-    eslint-plugin-n "^16.5.0"
+    eslint-plugin-n "^16.6.1"
     eslint-plugin-no-only-tests "^3.1.0"
     eslint-plugin-perfectionist "^2.5.0"
     eslint-plugin-toml "^0.8.0"
@@ -388,7 +388,7 @@
   resolved "https://registry.npmmirror.com/@eslint-types/jsdoc/-/jsdoc-46.8.2-1.tgz#c1d9ec9ce032f0ad3a943613c346a648bcad9063"
   integrity sha512-FwD7V0xX0jyaqj8Ul5ZY+TAAPohDfVqtbuXJNHb+OIv1aTIqZi5+Zn3F2UwQ5O3BnQd2mTduyK0+HjGx3/AMFg==
 
-"@eslint-types/typescript-eslint@^6.16.0":
+"@eslint-types/typescript-eslint@^6.17.0":
   version "6.17.0"
   resolved "https://registry.npmmirror.com/@eslint-types/typescript-eslint/-/typescript-eslint-6.17.0.tgz#7f180d0d97cd87fa84defed46caa0e374e80094d"
   integrity sha512-fPwdc27nXbsn69obhmOujFMxheimgs+Hf0iHCyq0s1w48iPpd0PgA/UvAs/PRUY/H9GYvrZDSvBTxtHLqnzb3A==
@@ -593,7 +593,7 @@
     "@stylistic/eslint-plugin-js" "1.5.3"
     "@typescript-eslint/utils" "^6.17.0"
 
-"@stylistic/eslint-plugin@^1.5.1":
+"@stylistic/eslint-plugin@^1.5.3":
   version "1.5.3"
   resolved "https://registry.npmmirror.com/@stylistic/eslint-plugin/-/eslint-plugin-1.5.3.tgz#bb4639722a2239d72cf8c2cb38ea6bec7cac8ed6"
   integrity sha512-Vee+hHKaCd8DPRoRJTCV+mOFz+zFIaA9QiNJaAvgBzmPkcDnSC7Ewh518fN6SSNe9psS8TDIpcxd1g5v4MSY5A==
@@ -699,7 +699,7 @@
   resolved "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.20.tgz#f066abfcd1cbe66267cdbbf0de010d8a41b41597"
   integrity sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==
 
-"@typescript-eslint/eslint-plugin@^6.16.0":
+"@typescript-eslint/eslint-plugin@^6.18.0":
   version "6.18.0"
   resolved "https://registry.npmmirror.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.18.0.tgz#94b86f3c25b468c714a04bd490017ecec2fd3746"
   integrity sha512-3lqEvQUdCozi6d1mddWqd+kf8KxmGq2Plzx36BlkjuQe3rSTm/O98cLf0A4uDO+a5N1KD2SeEEl6fW97YHY+6w==
@@ -716,7 +716,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/parser@^6.16.0":
+"@typescript-eslint/parser@^6.18.0":
   version "6.18.0"
   resolved "https://registry.npmmirror.com/@typescript-eslint/parser/-/parser-6.18.0.tgz#d494161d64832e869f0a6acc6000a2cdff858383"
   integrity sha512-v6uR68SFvqhNQT41frCMCQpsP+5vySy6IdgjlzUWoo7ALCnpaWYcz/Ij2k4L8cEsL0wkvOviCMpjmtRtHNOKzA==
@@ -1044,9 +1044,9 @@ callsites@^3.0.0:
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
 caniuse-lite@^1.0.30001565:
-  version "1.0.30001574"
-  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001574.tgz#fb4f1359c77f6af942510493672e1ec7ec80230c"
-  integrity sha512-BtYEK4r/iHt/txm81KBudCUcTy7t+s9emrIaHqjYurQ10x71zJ5VQ9x1dYPcz/b+pKSp4y/v1xSI67A+LzpNyg==
+  version "1.0.30001576"
+  resolved "https://registry.npmmirror.com/caniuse-lite/-/caniuse-lite-1.0.30001576.tgz#893be772cf8ee6056d6c1e2d07df365b9ec0a5c4"
+  integrity sha512-ff5BdakGe2P3SQsMsiqmt1Lc8221NR1VzHj5jXN5vBny9A6fpze94HiVV/n7XRosOlsShJcvMv5mdnpjOGCEgg==
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -1693,10 +1693,10 @@ eslint-plugin-i@^2.29.1:
     minimatch "^3.1.2"
     semver "^7.5.4"
 
-eslint-plugin-jsdoc@^46.9.1:
-  version "46.10.1"
-  resolved "https://registry.npmmirror.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-46.10.1.tgz#77c871309c4ed93758a3b2fdf384dc6189cf8605"
-  integrity sha512-x8wxIpv00Y50NyweDUpa+58ffgSAI5sqe+zcZh33xphD0AVh+1kqr1ombaTRb7Fhpove1zfUuujlX9DWWBP5ag==
+eslint-plugin-jsdoc@^48.0.2:
+  version "48.0.2"
+  resolved "https://registry.npmmirror.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-48.0.2.tgz#b843107e8caec57b8b463f04797be3b30d6a52da"
+  integrity sha512-CBFl5Jc7+jlV36RwDm+PQ8Uw5r28pn2/uW/OaB+Gw5bFwn4Py/1eYMZ3hGf9S4meUFZ/sRvS+hVif2mRAp6WqQ==
   dependencies:
     "@es-joy/jsdoccomment" "~0.41.0"
     are-docs-informative "^0.0.2"
@@ -1727,7 +1727,7 @@ eslint-plugin-markdown@^3.0.1:
   dependencies:
     mdast-util-from-markdown "^0.8.5"
 
-eslint-plugin-n@^16.5.0:
+eslint-plugin-n@^16.6.1:
   version "16.6.1"
   resolved "https://registry.npmmirror.com/eslint-plugin-n/-/eslint-plugin-n-16.6.1.tgz#b16e0033bc9ce592b1c3512cb1cee24f84ecb5ae"
   integrity sha512-M1kE5bVQRLBMDYRZwDhWzlzbp370SRRRC1MHqq4I3L2Tatey+9/2csc5mwLDPlmhJaDvkojbrNUME5/llpRyDg==
@@ -3460,7 +3460,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vite@^5.0.10:
+vite@^5.0.11:
   version "5.0.11"
   resolved "https://registry.npmmirror.com/vite/-/vite-5.0.11.tgz#31562e41e004cb68e1d51f5d2c641ab313b289e4"
   integrity sha512-XBMnDjZcNAw/G1gEiskiM1v6yzM4GE5aMGvhWTlHAYYhxb7S3/V1s3m2LDHa8Vh6yIWYYB0iJwsEaS523c4oYA==
@@ -3478,10 +3478,10 @@ vitepress-plugin-mermaid@^2.0.16:
   optionalDependencies:
     "@mermaid-js/mermaid-mindmap" "^9.3.0"
 
-vitepress@^1.0.0-rc.35:
-  version "1.0.0-rc.35"
-  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.35.tgz#d5cd3ea6d7bca87c4375aef156dc1af632354a92"
-  integrity sha512-+2VnFwtYIiKWWAnMjWg7ik0PfsUdrNoZIZKeu5dbJtrkzKO/mTvlA3owiT5VBKJsZAgI17B5UV37aYfUvGrN6g==
+vitepress@^1.0.0-rc.36:
+  version "1.0.0-rc.36"
+  resolved "https://registry.npmmirror.com/vitepress/-/vitepress-1.0.0-rc.36.tgz#78f1c19538d65ac4e69c44bea77579f2cccf5887"
+  integrity sha512-2z4dpM9PplN/yvTifhavOIAazlCR6OJ5PvLoRbc+7LdcFeIlCsuDGENLX4HjMW18jQZF5/j7++PNqdBfeazxUA==
   dependencies:
     "@docsearch/css" "^3.5.2"
     "@docsearch/js" "^3.5.2"
@@ -3496,8 +3496,8 @@ vitepress@^1.0.0-rc.35:
     shikiji "^0.9.17"
     shikiji-core "^0.9.17"
     shikiji-transformers "^0.9.17"
-    vite "^5.0.10"
-    vue "^3.4.4"
+    vite "^5.0.11"
+    vue "^3.4.5"
 
 vue-demi@>=0.14.6:
   version "0.14.6"
@@ -3517,7 +3517,7 @@ vue-eslint-parser@^9.3.1, vue-eslint-parser@^9.3.2:
     lodash "^4.17.21"
     semver "^7.3.6"
 
-vue@^3.4.4:
+vue@^3.4.5:
   version "3.4.5"
   resolved "https://registry.npmmirror.com/vue/-/vue-3.4.5.tgz#c08b9d903a20faaf4df7270bf2fa7487741b2294"
   integrity sha512-VH6nHFhLPjgu2oh5vEBXoNZxsGHuZNr3qf4PHClwJWw6IDqw6B3x+4J+ABdoZ0aJuT8Zi0zf3GpGlLQCrGWHrw==

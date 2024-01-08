@@ -1,8 +1,10 @@
 ---
-title: JavaScript 实现深拷贝
+title: 手写 JavaScript 实现深拷贝
 ---
 
-# JavaScript 实现深拷贝
+# 手写 JavaScript 实现深拷贝
+
+## 代码
 
 ```javascript
 function deepCopy(obj) {
