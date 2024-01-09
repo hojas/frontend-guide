@@ -15,6 +15,8 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '数据类型', link: '/javascript/type' },
         { text: 'async/await 的原理', link: '/javascript/async-await' },
+        { text: 'requestIdleCallback', link: '/javascript/request-idle-callback' },
+        { text: 'requestAnimationFrame', link: '/javascript/request-animation-frame' },
       ],
     },
   ],
