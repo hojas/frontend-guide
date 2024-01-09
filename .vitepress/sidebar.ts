@@ -42,10 +42,9 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '工程化',
       items: [
-        {
-          text: 'Webpack',
-          link: '/engineering/webpack',
-        },
+        { text: 'Webpack', link: '/engineering/webpack' },
+        { text: 'Webpack Loader', link: '/engineering/webpack-loader' },
+        { text: 'Webpack 插件', link: '/engineering/webpack-plugin' },
       ],
     },
   ],

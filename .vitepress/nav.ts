@@ -17,7 +17,7 @@ export const nav: DefaultTheme.NavItem[] = [
   //     { text: 'Vue', link: '/vue' },
   //   ],
   // },
-  // { text: '前端工程化', link: '/engineering' },
+  { text: '前端工程化', link: '/engineering' },
   { text: '浏览器原理', link: '/browser' },
   // { text: '前端框架', link: '/frameworks' },
   // { text: '前端工程化', link: '/engineering' },
