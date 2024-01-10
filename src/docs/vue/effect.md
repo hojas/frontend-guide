@@ -170,6 +170,10 @@ export function onScopeDispose(fn: () => void) {
 // 记录当前活跃的对象
 export let activeEffect: ReactiveEffect | undefined
 
+/**
+ * 创建一个 ReactiveEffect
+ * 用于收集依赖和触发依赖
+ */
 export class ReactiveEffect<T = any> {
   // 是否为激活状态
   active = true
@@ -325,9 +329,12 @@ export interface ReactiveEffectRunner<T = any> {
 
 /**
  * Registers the given function to track reactive updates.
+ * 注册给定的函数以跟踪响应式更新。
  *
- * The given function will be run once immediately. Every time any reactive
- * property that's accessed within it gets updated, the function will run again.
+ * The given function will be run once immediately.
+ * 给定的函数将立即运行一次。每次任何响应式
+ * Every time any reactive property that's accessed within it gets updated, the function will run again.
+ * 在它内部访问的任何响应式属性被更新时，该函数将再次运行。
  *
  * @param fn - The function that will track reactive updates.
  * @param options - Allows to control the effect's behaviour.
@@ -337,13 +344,16 @@ export function effect<T = any>(
   fn: () => T,
   options?: ReactiveEffectOptions,
 ): ReactiveEffectRunner {
+  // 如果 fn 是一个 ReactiveEffectRunner 则取出 effect 中的 fn
   if ((fn as ReactiveEffectRunner).effect instanceof ReactiveEffect)
     fn = (fn as ReactiveEffectRunner).effect.fn
 
+  // 创建一个 ReactiveEffect
   const _effect = new ReactiveEffect(fn, NOOP, () => {
     if (_effect.dirty)
       _effect.run()
   })
+  // 如果 options 存在则将 options 中的属性赋值给 _effect
   if (options) {
     extend(_effect, options)
     if (options.scope)

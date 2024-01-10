@@ -36,14 +36,19 @@ export const nav: DefaultTheme.NavItem[] = [
     // link: 'https://xiaolincoding.com/',
     link: '/network',
   },
+  // {
+  //   text: '算法',
+  //   link: '/algorithm',
+  // link: 'https://www.programmercarl.com/',
+  // },
+  {
+    text: '设计模式',
+    link: '/design-pattern',
+  },
   {
     text: '学习资源',
     link: '/resource',
   },
-  // {
-  //   text: '算法',
-  //   link: 'https://www.programmercarl.com/',
-  // },
   {
     text: '关于我',
     link: '/about',

@@ -90,4 +90,21 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/algorithm': [
+    {
+      text: '算法',
+      items: [
+        { text: '排序算法', link: '/algorithm/sorting' },
+      ],
+    },
+  ],
+  '/design-pattern': [
+    {
+      text: '设计模式',
+      items: [
+        { text: '编程原则', link: '/design-pattern/principles' },
+        { text: '常用设计模式', link: '/design-pattern/design-patterns' },
+      ],
+    },
+  ],
 }
