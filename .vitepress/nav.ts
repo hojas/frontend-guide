@@ -32,13 +32,14 @@ export const nav: DefaultTheme.NavItem[] = [
     link: '/source-code',
   },
   {
+    text: '网络',
+    // link: 'https://xiaolincoding.com/',
+    link: '/network',
+  },
+  {
     text: '学习资源',
     link: '/resource',
   },
-  // {
-  //   text: '计算机基础',
-  //   link: 'https://xiaolincoding.com/',
-  // },
   // {
   //   text: '算法',
   //   link: 'https://www.programmercarl.com/',

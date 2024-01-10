@@ -79,4 +79,15 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/network': [
+    {
+      text: '网络',
+      items: [
+        { text: 'HTTP 协议', link: '/network/http' },
+        // { text: 'HTTPS', link: '/network/https' },
+        // { text: 'TCP', link: '/network/tcp' },
+        // { text: 'UDP', link: '/network/udp' },
+      ],
+    },
+  ],
 }
