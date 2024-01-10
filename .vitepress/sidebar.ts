@@ -60,6 +60,14 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
+  '/nodejs': [
+    {
+      text: 'Node.js',
+      items: [
+        { text: '事件循环', link: '/nodejs/event-loop' },
+      ],
+    },
+  ],
   '/source-code': [
     {
       text: '手搓代码',

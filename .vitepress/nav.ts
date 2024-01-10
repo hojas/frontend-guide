@@ -26,7 +26,7 @@ export const nav: DefaultTheme.NavItem[] = [
   //   text: '性能优化',
   //   link: '/performance',
   // },
-  // { text: 'Node.js', link: '/nodejs' },
+  { text: 'Node.js', link: '/nodejs' },
   {
     text: '手搓代码',
     link: '/source-code',
