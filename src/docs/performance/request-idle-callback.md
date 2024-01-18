@@ -1,7 +1,0 @@
----
-title: requestIdleCallback
----
-
-# requestIdleCallback
-
-

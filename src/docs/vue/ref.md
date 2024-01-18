@@ -104,9 +104,11 @@ class RefImpl<T> {
   }
 
   set value(newVal) {
+    // 是否对新值进行响应式
     const useDirectValue
-= this.__v_isShallow || isShallow(newVal) || isReadonly(newVal)
+      = this.__v_isShallow || isShallow(newVal) || isReadonly(newVal)
     newVal = useDirectValue ? newVal : toRaw(newVal)
+    // 是否发生变化，如果发生变化则触发副作用
     if (hasChanged(newVal, this._rawValue)) {
       this._rawValue = newVal
       this._value = useDirectValue ? newVal : toReactive(newVal)

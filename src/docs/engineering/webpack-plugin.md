@@ -8,25 +8,37 @@ title: webpack 插件
 
 插件目的在于解决 loader 无法实现的其他事。
 
+webpack 插件是一个具有 apply 方法的 JavaScript 对象。apply 方法会被 webpack compiler 调用，并且在整个编译生命周期都可以访问 compiler 对象。
+
+```js
+// ConsoleLogOnBuildWebpackPlugin.js
+const pluginName = 'ConsoleLogOnBuildWebpackPlugin'
+
+class ConsoleLogOnBuildWebpackPlugin {
+  apply(compiler) {
+    compiler.hooks.run.tap(pluginName, (compilation) => {
+      console.log('webpack 构建正在启动！')
+    })
+  }
+}
+
+module.exports = ConsoleLogOnBuildWebpackPlugin
+```
+
 插件向第三方开发者提供了 webpack 引擎中完整的能力。使用阶段式的构建回调，开发者可以在 webpack 构建流程中引入自定义的行为。创建插件比创建 loader 更加高级，因为你需要理解 webpack 底层的特性来处理相应的钩子，所以请做好阅读源码的准备！
 
-webpack5的插件是一个类，它继承自 webpack.Plugin 类。webpack.Plugin 类提供了一些钩子方法，插件可以通过这些钩子方法来执行自己的逻辑。
+**webpack 插件由以下组成：**
 
-webpack5 的插件原理可以概括为以下几个步骤：
+- 一个 JavaScript 命名函数或 JavaScript 类
+- 在插件函数的 prototype 上定义一个 apply 方法
+- 指定一个绑定到 webpack 自身的事件钩子
+- 处理 webpack 内部实例的特定数据
+- 功能完成后调用 webpack 提供的回调
 
-1. webpack 在构建阶段，会根据配置文件中的插件列表，创建插件实例
-2. webpack 会为每个插件实例调用 apply() 方法，并传入 compiler 对象作为参数
-3. 插件实例会在 apply() 方法中执行自己的逻辑
-4. webpack 会将插件实例的返回值作为钩子方法的参数
+## compiler
 
-插件可以通过钩子方法来执行自己的逻辑。
+Compiler 模块是 webpack 的主要引擎，它通过 CLI 或者 Node API 传递的所有选项创建出一个 compilation 实例。 它扩展（extends）自 Tapable 类，用来注册和调用插件。大多数面向用户的插件会首先在 Compiler 上注册。常用的方法和属性有 run()、watch()、hooks、context 等。
 
-**webpack5提供了以下钩子方法：**
+## compilation
 
-1. apply()：在插件实例创建后调用
-2. init()：在插件实例初始化后调用
-3. preCompile()：在编译模块之前调用
-4. compile()：在编译模块时调用
-5. postCompile()：在编译模块之后调用
-6. emit()：在打包文件之前调用
-7. normalModuleFactory()：在创建模块工厂时调用
+Compilation 模块会被 Compiler 用来创建新的 compilation 对象（或新的 build 对象）。 compilation 实例能够访问所有的模块和它们的依赖（大部分是循环依赖）。 它会对应用程序的依赖图中所有模块， 进行字面上的编译(literal compilation)。 在编译阶段，模块会被加载(load)、封存(seal)、优化(optimize)、 分块(chunk)、哈希(hash)和重新创建(restore)。

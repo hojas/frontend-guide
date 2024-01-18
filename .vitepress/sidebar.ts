@@ -30,12 +30,17 @@ export const sidebar: DefaultTheme.Sidebar = {
   ],
   '/vue': [
     {
-      text: 'Vue',
+      text: 'Vue 实现原理',
       items: [
         { text: '响应式原理', link: '/vue/reactivity' },
-        { text: 'Diff 算法', link: '/vue/diff' },
+        { text: 'effectScope.ts 源码分析', link: '/vue/effect-scope' },
+        { text: 'effect.ts 源码分析', link: '/vue/effect' },
+        { text: 'reactiveEffect.ts 源码分析', link: '/vue/reactive-effect' },
+        { text: 'reactive.ts 源码分析', link: '/vue/reactive' },
+        { text: 'ref 实现原理', link: '/vue/ref' },
         { text: 'computed 实现原理', link: '/vue/computed' },
         { text: 'watch 实现原理', link: '/vue/watch' },
+        { text: 'Diff 算法', link: '/vue/diff' },
         // { text: '路由', link: '/vue/router' },
       ],
     },
@@ -47,6 +52,15 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'Webpack', link: '/engineering/webpack' },
         { text: 'Webpack Loader', link: '/engineering/webpack-loader' },
         { text: 'Webpack 插件', link: '/engineering/webpack-plugin' },
+      ],
+    },
+  ],
+  '/performance': [
+    {
+      text: '性能优化',
+      items: [
+        { text: '性能指标', link: '/performance/performance-index' },
+        { text: '性能优化实践', link: '/performance/practice' },
       ],
     },
   ],
@@ -84,7 +98,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '网络',
       items: [
         { text: 'HTTP 协议', link: '/network/http' },
-        // { text: 'HTTPS', link: '/network/https' },
+        { text: 'HTTP/2', link: '/network/http2' },
         // { text: 'TCP', link: '/network/tcp' },
         // { text: 'UDP', link: '/network/udp' },
       ],
