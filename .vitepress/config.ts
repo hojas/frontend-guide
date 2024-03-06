@@ -1,16 +1,14 @@
-import { withMermaid } from 'vitepress-plugin-mermaid'
-
 import { head } from './head'
 import { nav } from './nav'
 import { sidebar } from './sidebar'
 
-export default withMermaid({
+export default {
   base: '/',
   lang: 'zh-Hans',
   title: 'FrontendGuide',
   description: 'FrontendGuide 是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
   srcDir: 'src/docs',
-  markdown: { lineNumbers: true },
+  markdown: { lineNumbers: true, math: true, mermaid: true },
   lastUpdated: true,
   head,
   themeConfig: {
@@ -27,4 +25,4 @@ export default withMermaid({
       copyright: 'Copyright © 2024-present FrontendGuide',
     },
   },
-})
+}

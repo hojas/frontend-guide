@@ -15,6 +15,6 @@ export const head: HeadConfig[] = [
   [
     'script',
     {},
-    'LA.init({id:"KHEitCBwNlzuiGqc",ck:"KHEitCBwNlzuiGqc",autoTrack:true,hashMode:true})',
+    'LA.init({id:"KHEitCBwNlzuiGqc",ck:"KHEitCBwNlzuiGqc",autoTrack:true,hashMode:true,screenRecord:true})',
   ],
 ]
