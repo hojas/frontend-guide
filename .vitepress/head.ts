@@ -17,4 +17,13 @@ export const head: HeadConfig[] = [
     {},
     'LA.init({id:"KHEitCBwNlzuiGqc",ck:"KHEitCBwNlzuiGqc",autoTrack:true,hashMode:true,screenRecord:true})',
   ],
+  [
+    'script',
+    { src: 'https://sdk.51.la/perf/js-sdk-perf.min.js', crossorigin: 'anonymous' },
+  ],
+  [
+    'script',
+    {},
+    'new LingQue.Monitor().init({id:"KNMThgvfRcpYrDaA",sendSpaPv:true})',
+  ],
 ]
