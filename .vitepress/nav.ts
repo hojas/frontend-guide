@@ -3,12 +3,8 @@ import type { DefaultTheme } from 'vitepress'
 export const nav: DefaultTheme.NavItem[] = [
   { text: '首页', link: '/' },
   {
-    text: '语言',
-    items: [
-      { text: 'JavaScript', link: '/javascript' },
-      { text: 'ECMAScript', link: '/ecmascript' },
-      { text: 'TypeScript', link: '/typescript' },
-    ],
+    text: '前端基础',
+    link: '/basic',
   },
   { text: 'Vue 实现原理', link: '/vue' },
   // {
