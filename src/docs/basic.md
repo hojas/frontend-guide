@@ -4,8 +4,6 @@ title: 前端基础
 
 # 前端基础
 
-前端基础文档。
-
 ## HTML
 
 https://developer.mozilla.org/zh-CN/docs/Web/HTML

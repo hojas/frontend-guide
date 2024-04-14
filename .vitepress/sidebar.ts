@@ -93,17 +93,6 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
-  '/network': [
-    {
-      text: '网络',
-      items: [
-        { text: 'HTTP 协议', link: '/network/http' },
-        { text: 'HTTP/2', link: '/network/http2' },
-        // { text: 'TCP', link: '/network/tcp' },
-        // { text: 'UDP', link: '/network/udp' },
-      ],
-    },
-  ],
   '/algorithm': [
     {
       text: '算法',
