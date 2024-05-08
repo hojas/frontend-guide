@@ -1,8 +1,8 @@
 {
   "name": "frontend-guide",
   "type": "module",
-  "packageManager": "pnpm@8.15.6",
-  "author": "hojas <cyxhuan9@163.com>",
+  "packageManager": "pnpm@9.1.0",
+  "author": "hojas",
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
@@ -12,13 +12,14 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "vue-mermaid-render": "^0.1.3"
+    "vue": "^3.4.27",
+    "vue-mermaid-render": "^0.1.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.13.3",
-    "@types/node": "^20.12.7",
-    "eslint": "^9.0.0",
+    "@antfu/eslint-config": "^2.16.3",
+    "@types/node": "^20.12.10",
+    "eslint": "^9.2.0",
     "typescript": "^5.4.5",
-    "vitepress": "^1.1.0"
+    "vitepress": "^1.1.4"
   }
 }

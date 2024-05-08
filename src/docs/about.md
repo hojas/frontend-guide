@@ -17,4 +17,4 @@ Web 前端开发一枚。
 ## 联系方式
 
 - Github: https://github.com/hojas
-- Email: cyxhuan9@163.com
+- Email: yuanxiangchen.x@gmail.com

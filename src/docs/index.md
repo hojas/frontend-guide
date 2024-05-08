@@ -16,14 +16,14 @@ hero:
       text: 本站源码
       link: https://github.com/hojas/frontend-guide
 features:
-  - title: 前端框架
-    details: Vue 实现原理...
-  - title: 前端工程化
+  - title: 前端基础
+    details: HTML、CSS、JavaScript、TypeScript...
+  - title: 前端基础建设
     details: 项目构建、代码质量、测试...
+  - title: Vue 源码
+    details: 响应式原理...
   - title: 浏览器原理
     details: 事件循环、浏览器渲染原理...
-  - title: Node.js 开发
-    details: 模块化原理、事件循环...
 ---
 
 <style>
