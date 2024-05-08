@@ -32,11 +32,21 @@ title: 前端基础建设
 
 https://github.com/hojas/private-npm-registry
 
+## 前端框架
+
+1. Vue
+2. React
+
 ## 代码构建
 
 1. vite
 2. rollup
 3. webpack
+
+## CSS 处理
+
+1. SASS
+2. PostCSS
 
 ## 项目部署
 

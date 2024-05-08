@@ -82,14 +82,12 @@ export const sidebar: DefaultTheme.Sidebar = {
       ],
     },
   ],
-  '/source-code': [
+  '/blog': [
     {
-      text: '手搓代码',
+      text: '博客文章',
       items: [
-        { text: '防抖', link: '/source-code/debounce' },
-        { text: '节流', link: '/source-code/throttle' },
-        { text: '深拷贝', link: '/source-code/deep-copy' },
-        { text: '音频可视化的实现', link: '/source-code/voice-visualization' },
+        { text: '使用 Docker 一键部署带 Let\'s Encrypt SSL 证书的 Nginx', link: '/blog/1' },
+        { text: '音频可视化的实现', link: '/blog/2' },
       ],
     },
   ],

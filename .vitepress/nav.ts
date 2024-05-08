@@ -10,7 +10,7 @@ export const nav: DefaultTheme.NavItem[] = [
   { text: 'Node.js', link: '/nodejs' },
   // { text: '网络', link: '/network' },
   // { text: '编程思想', link: '/thinking' },
-  { text: '手搓代码', link: '/source-code' },
+  { text: '博客文章', link: '/blog' },
   // {
   //   text: '算法',
   //   link: '/algorithm',
