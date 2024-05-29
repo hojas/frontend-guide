@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: browser
+      link: basic
     - theme: alt
       text: 本站源码
       link: https://github.com/hojas/frontend-guide
