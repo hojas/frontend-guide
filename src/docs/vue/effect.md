@@ -81,10 +81,9 @@ export class ReactiveEffect<T = any> {
    */
   _runnings = 0
   /**
-   * 内部属性，表示当前正在查询中的 effect 的数量
    * @internal
    */
-  _queryings = 0
+  _shouldSchedule = false
   /**
    * 内部属性，表示当前 effect 的依赖项数组的长度
    * @internal
@@ -107,21 +106,27 @@ export class ReactiveEffect<T = any> {
 
   // 获取当前 effect 的脏状态
   public get dirty() {
-    if (this._dirtyLevel === DirtyLevels.ComputedValueMaybeDirty) {
-      this._dirtyLevel = DirtyLevels.NotDirty
-      this._queryings++
+    if (
+      this._dirtyLevel === DirtyLevels.MaybeDirty_ComputedSideEffect
+      || this._dirtyLevel === DirtyLevels.MaybeDirty
+    ) {
+      this._dirtyLevel = DirtyLevels.QueryingDirty
       pauseTracking()
-      for (const dep of this.deps) {
+      for (let i = 0; i < this._depsLength; i++) {
+        const dep = this.deps[i]
         if (dep.computed) {
           triggerComputed(dep.computed)
-          if (this._dirtyLevel >= DirtyLevels.ComputedValueDirty)
+          if (this._dirtyLevel >= DirtyLevels.Dirty) {
             break
+          }
         }
       }
+      if (this._dirtyLevel === DirtyLevels.QueryingDirty) {
+        this._dirtyLevel = DirtyLevels.NotDirty
+      }
       resetTracking()
-      this._queryings--
     }
-    return this._dirtyLevel >= DirtyLevels.ComputedValueDirty
+    return this._dirtyLevel >= DirtyLevels.Dirty
   }
 
   // 设置当前 effect 的脏状态
@@ -167,7 +172,7 @@ export class ReactiveEffect<T = any> {
     if (this.active) {
       preCleanupEffect(this)
       postCleanupEffect(this)
-      this.onStop?.()
+      this.onStop && this.onStop()
       this.active = false
     }
   }
@@ -195,11 +200,11 @@ function preCleanupEffect(effect: ReactiveEffect) {
  * 这样，便于在下次effect触发，只追踪新的依赖项，提高了响应式系统的性能。
  */
 function postCleanupEffect(effect: ReactiveEffect) {
-  if (effect.deps && effect.deps.length > effect._depsLength) {
-    for (let i = effect._depsLength; i < effect.deps.length; i++)
+  if (effect.deps.length > effect._depsLength) {
+    for (let i = effect._depsLength; i < effect.deps.length; i++) {
       // 清理多余的依赖项
       cleanupDepEffect(effect.deps[i], effect)
-
+    }
     // 调整依赖项数组的长度
     effect.deps.length = effect._depsLength
   }
@@ -213,8 +218,9 @@ function cleanupDepEffect(dep: Dep, effect: ReactiveEffect) {
     // 删除无关的依赖项
     dep.delete(effect)
     // 如果依赖项为空，执行清理操作
-    if (dep.size === 0)
+    if (dep.size === 0) {
       dep.cleanup()
+    }
   }
 }
 
@@ -242,7 +248,8 @@ export interface ReactiveEffectRunner<T = any> {
  *
  * The given function will be run once immediately.
  * 给定的函数将立即运行一次。每次任何响应式
- * Every time any reactive property that's accessed within it gets updated, the function will run again.
+ * Every time any reactive property that's accessed within it gets updated,
+ * the function will run again.
  * 在它内部访问的任何响应式属性被更新时，该函数将再次运行。
  *
  * @param fn - The function that will track reactive updates.
@@ -254,13 +261,15 @@ export function effect<T = any>(
   options?: ReactiveEffectOptions,
 ): ReactiveEffectRunner {
   // 如果 fn 是一个 ReactiveEffectRunner 则取出 effect 中的 fn
-  if ((fn as ReactiveEffectRunner).effect instanceof ReactiveEffect)
+  if ((fn as ReactiveEffectRunner).effect instanceof ReactiveEffect) {
     fn = (fn as ReactiveEffectRunner).effect.fn
+  }
 
   // 创建一个 ReactiveEffect
   const _effect = new ReactiveEffect(fn, NOOP, () => {
-    if (_effect.dirty)
+    if (_effect.dirty) {
       _effect.run()
+    }
   })
   if (options) {
     // 如果有 options 则将 options 中合并到 _effect 中
@@ -351,9 +360,9 @@ export function trackEffect(
     // 如果最后一个依赖项不是当前依赖项，进行处理
     if (oldDep !== dep) {
       // 如果最后一个依赖项存在，则清理 effect 与最后一个依赖项的关联
-      if (oldDep)
+      if (oldDep) {
         cleanupDepEffect(oldDep, effect)
-
+      }
       // 将当前依赖项添加到 effect 的依赖项数组中
       effect.deps[effect._depsLength++] = dep
     }
@@ -371,9 +380,6 @@ const queueEffectSchedulers: EffectScheduler[] = []
 
 /**
  * 触发依赖
- * @param dep
- * @param dirtyLevel
- * @param debuggerEventExtraInfo
  */
 export function triggerEffects(
   dep: Dep,
@@ -384,30 +390,35 @@ export function triggerEffects(
   pauseScheduling()
   // 遍历依赖项中的 effect
   for (const effect of dep.keys()) {
-    if (!effect.allowRecurse && effect._runnings)
-      continue
-
+    // dep.get(effect) is very expensive, we need to calculate it lazily and reuse the result
+    let tracking: boolean | undefined
     // 如果 effect 的脏状态小于指定的脏状态级别，执行下面的逻辑
     if (
       effect._dirtyLevel < dirtyLevel
-      && (!effect._runnings || dirtyLevel !== DirtyLevels.ComputedValueDirty)
+      && (tracking ??= dep.get(effect) === effect._trackId)
     ) {
-      const lastDirtyLevel = effect._dirtyLevel
+      effect._shouldSchedule ||= effect._dirtyLevel === DirtyLevels.NotDirty
       // 将 effect 的脏状态设置为指定的脏状态级别
       effect._dirtyLevel = dirtyLevel
-      // 如果 effect 的脏状态为 NotDirty，且 effect 没有在查询中，则执行下面的逻辑
+    }
+    if (
+      effect._shouldSchedule
+      && (tracking ??= dep.get(effect) === effect._trackId)
+    ) {
+      if (__DEV__) {
+        effect.onTrigger?.(extend({ effect }, debuggerEventExtraInfo))
+      }
+      // 触发 effect 的 trigger 函数
+      effect.trigger()
       if (
-        lastDirtyLevel === DirtyLevels.NotDirty
-        && (!effect._queryings || dirtyLevel !== DirtyLevels.ComputedValueDirty)
+        (!effect._runnings || effect.allowRecurse)
+        && effect._dirtyLevel !== DirtyLevels.MaybeDirty_ComputedSideEffect
       ) {
-        if (__DEV__)
-          effect.onTrigger?.(extend({ effect }, debuggerEventExtraInfo))
-
-        // 触发 effect 的 trigger 函数
-        effect.trigger()
-        if (effect.scheduler)
+        effect._shouldSchedule = false
+        if (effect.scheduler) {
           // 将 effect 的调度器函数添加到队列中
           queueEffectSchedulers.push(effect.scheduler)
+        }
       }
     }
   }

@@ -200,8 +200,9 @@ export function getCurrentScope() {
 
 /**
  * Registers a dispose callback on the current active effect scope.
- * 在当前活动的作用域上注册一个 dispose 回调。
  * The callback will be invoked when the associated effect scope is stopped.
+ *
+ * 在当前活动的作用域上注册一个 dispose 回调。
  * 当停止关联的作用域时，将调用回调。
  *
  * @param fn - The callback function to attach to the scope's cleanup.
