@@ -1,8 +1,8 @@
 ---
-title: ReactiveEffect.ts 源码分析
+title: reactiveEffect.ts 源码分析
 ---
 
-# ReactiveEffect.ts 源码分析
+# reactiveEffect.ts 源码分析
 
 ## track 函数
 
@@ -52,13 +52,13 @@ export const MAP_KEY_ITERATE_KEY = Symbol(__DEV__ ? 'Map key iterate' : '')
 export function track(target: object, type: TrackOpTypes, key: unknown) {
   if (shouldTrack && activeEffect) {
     let depsMap = targetMap.get(target)
-    if (!depsMap)
+    if (!depsMap) {
       targetMap.set(target, (depsMap = new Map()))
-
+    }
     let dep = depsMap.get(key)
-    if (!dep)
+    if (!dep) {
       depsMap.set(key, (dep = createDep(() => depsMap!.delete(key))))
-
+    }
     trackEffect(
       activeEffect,
       dep,
@@ -110,8 +110,9 @@ export function trigger(
   }
   else {
     // schedule runs for SET | ADD | DELETE
-    if (key !== void 0)
+    if (key !== void 0) {
       deps.push(depsMap.get(key))
+    }
 
     // also run for iteration key on ADD | DELETE | Map.SET
     switch (type) {
@@ -169,6 +170,7 @@ export function trigger(
  * @param key
  */
 export function getDepFromReactive(object: any, key: string | number | symbol) {
-  return targetMap.get(object)?.get(key)
+  const depsMap = targetMap.get(object)
+  return depsMap && depsMap.get(key)
 }
 ```
