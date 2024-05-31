@@ -1,9 +1,16 @@
 <script setup lang="ts">
-defineProps<{ src: string, alt?: string }>()
+type Mode = 'dark' | 'light'
+
+withDefaults(
+  defineProps<{ src: string, mode: Mode, alt?: string }>(),
+  {
+    mode: 'dark',
+  },
+)
 </script>
 
 <template>
-  <div class="img-loader">
+  <div class="img-loader" :class="mode">
     <img :src="src" :alt="alt">
   </div>
 </template>
@@ -11,6 +18,13 @@ defineProps<{ src: string, alt?: string }>()
 <style scoped>
 .img-loader {
   padding: 10px;
+}
+
+.dark {
+  background: #000;
+}
+
+.light {
   background: #fff;
 }
 </style>
