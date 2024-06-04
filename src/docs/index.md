@@ -1,6 +1,6 @@
 ---
 layout: home
-title: FrontendGuide | 分享前端开发技术和 Node.js 开发技术
+title: FrontendGuide | 分享前端开发技术和 Node.js 开发技术 | 前端开发指南
 hero:
   name: FrontendGuide
   # text: 分享前端开发技术和 Node.js 开发技术
