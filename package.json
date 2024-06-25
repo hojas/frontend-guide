@@ -1,7 +1,7 @@
 {
   "name": "frontend-guide",
   "type": "module",
-  "packageManager": "pnpm@9.1.4",
+  "packageManager": "pnpm@9.4.0",
   "author": "hojas",
   "license": "MIT",
   "scripts": {
@@ -12,14 +12,14 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "vue": "^3.4.27",
+    "vue": "^3.4.30",
     "vue-mermaid-render": "^0.1.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.20.0",
-    "@types/node": "^20.14.1",
-    "eslint": "^9.4.0",
-    "typescript": "^5.4.5",
+    "@antfu/eslint-config": "^2.21.1",
+    "@types/node": "^20.14.8",
+    "eslint": "^9.5.0",
+    "typescript": "^5.5.2",
     "vitepress": "^1.2.3"
   }
 }

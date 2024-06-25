@@ -419,18 +419,21 @@ function getSequence(arr: number[]): number[] {
       // 中间元素的下标
       const mid = (left + right) >> 1
       // 如果中间元素小于 current，说明中间元素不是第一个比 current 大的元素
-      if (arr[result[mid]] < current)
+      if (arr[result[mid]] < current) {
         // 下一轮查找从 mid + 1 开始
         left = mid + 1
-      else
+      }
+      else {
         // 否则下一轮查找从 mid 开始
         right = mid
+      }
     }
 
     // 从 result 中找比 current 大的元素中最小的元素，并替换
     if (current < arr[result[left]]) {
-      if (left > 0)
+      if (left > 0) {
         record[i] = result[left - 1]
+      }
       result[left] = i
     }
 
@@ -469,15 +472,17 @@ function getSequence(arr: number[]): number[] {
       v = result.length - 1
       while (u < v) {
         c = (u + v) >> 1
-        if (arr[result[c]] < arrI)
+        if (arr[result[c]] < arrI) {
           u = c + 1
-        else
+        }
+        else {
           v = c
+        }
       }
       if (arrI < arr[result[u]]) {
-        if (u > 0)
+        if (u > 0) {
           p[i] = result[u - 1]
-
+        }
         result[u] = i
       }
     }
