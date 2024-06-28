@@ -86,6 +86,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: '博客文章',
       items: [
+        { text: '手写实现数组实例方法', link: '/blog/4' },
         { text: 'JavaScript 脚本的加载时机', link: '/blog/3' },
         { text: '音频可视化的实现', link: '/blog/2' },
         { text: '使用 Docker 一键部署带 Let\'s Encrypt SSL 证书的 Nginx', link: '/blog/1' },

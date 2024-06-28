@@ -12,12 +12,12 @@
   "dependencies": {
     "@giscus/vue": "^3.0.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "vue": "^3.4.30",
+    "vue": "^3.4.31",
     "vue-mermaid-render": "^0.1.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
-    "@types/node": "^20.14.8",
+    "@types/node": "^20.14.9",
     "eslint": "^9.5.0",
     "typescript": "^5.5.2",
     "vitepress": "^1.2.3"
