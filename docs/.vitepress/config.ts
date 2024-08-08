@@ -25,7 +25,6 @@ export default {
   lang: 'zh-Hans',
   title: '前端指北',
   description: '前端指北是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
-  srcDir: 'src/docs',
   markdown: { lineNumbers: true, math: true, mermaid: true },
   lastUpdated: true,
   head,
