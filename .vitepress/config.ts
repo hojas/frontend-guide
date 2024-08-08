@@ -1,12 +1,30 @@
+import { getThemeConfig } from '@sugarat/theme/node'
+
 import { head } from './head'
 import { nav } from './nav'
 import { sidebar } from './sidebar'
 
+const blogTheme = getThemeConfig({
+  comment: {
+    repo: 'hojas/frontend-guide',
+    repoId: 'R_kgDOHItlnw',
+    category: 'Announcements',
+    categoryId: 'DIC_kwDOHItln84CblVj',
+    inputPosition: 'bottom',
+  },
+  footer: {
+    message: '',
+    version: false,
+    copyright: 'MIT License | 前端指北',
+  },
+})
+
 export default {
+  extends: blogTheme,
   base: '/',
   lang: 'zh-Hans',
-  title: 'FrontendGuide',
-  description: 'FrontendGuide 是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
+  title: '前端指北',
+  description: '前端指北是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
   srcDir: 'src/docs',
   markdown: { lineNumbers: true, math: true, mermaid: true },
   lastUpdated: true,
@@ -20,9 +38,6 @@ export default {
     docFooter: {
       prev: '上一篇',
       next: '下一篇',
-    },
-    footer: {
-      copyright: 'Copyright © 2024-present FrontendGuide',
     },
   },
 }

@@ -1,7 +1,7 @@
 {
   "name": "frontend-guide",
   "type": "module",
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.7.0",
   "author": "hojas",
   "license": "MIT",
   "scripts": {
@@ -10,16 +10,21 @@
     "serve": "vitepress serve --host 0.0.0.0 --port 3000"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@giscus/vue": "^3.0.0",
+    "@sugarat/theme": "^0.4.9",
+    "element-plus": "^2.7.8",
     "markdown-it-mathjax3": "^4.3.2",
-    "vue": "^3.4.35",
+    "pagefind": "^1.1.0",
+    "vue": "^3.4.36",
     "vue-mermaid-render": "^0.1.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.1",
-    "@types/node": "^22.0.2",
+    "@types/node": "^22.1.0",
     "eslint": "^9.8.0",
+    "sass": "^1.77.8",
     "typescript": "^5.5.4",
-    "vitepress": "^1.3.1"
+    "vitepress": "^1.3.2"
   }
 }

@@ -1,8 +1,12 @@
-import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import MyLayout from './MyLayout.vue'
+// import type { Theme } from 'vitepress'
+// import DefaultTheme from 'vitepress/theme'
+// import MyLayout from './MyLayout.vue'
+//
+// export default {
+//   extends: DefaultTheme,
+//   Layout: MyLayout,
+// } satisfies Theme
 
-export default {
-  extends: DefaultTheme,
-  Layout: MyLayout,
-} satisfies Theme
+import BlogTheme from '@sugarat/theme'
+
+export default BlogTheme
