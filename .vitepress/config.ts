@@ -7,7 +7,7 @@ const pageSize = 15
 export default defineConfig({
   lang: 'zh-Hans',
   base: '/',
-  cacheDir: './node_modules/vitepress_cache',
+  cacheDir: './node_modules/.vitepress_cache',
   title: '前端指北',
   description: '前端指北是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
   ignoreDeadLinks: true,
@@ -35,7 +35,7 @@ export default defineConfig({
     outline: {
       label: '文章导航',
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/hojas/frontend-guide' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/hojas' }],
   } as any,
   srcExclude: ['README.md'], // exclude the README.md , needn't to compiler
 })

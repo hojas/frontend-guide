@@ -25,7 +25,7 @@ async function getPosts(pageSize: number) {
 }
 
 async function generatePaginationPages(total: number, pageSize: number) {
-  //  pagesNum
+  // pagesNum
   const pagesNum = total % pageSize === 0 ? total / pageSize : Math.floor(total / pageSize) + 1
   const paths = resolve('./')
   if (total > 0) {
@@ -36,11 +36,12 @@ page: true
 title: ${i === 1 ? '首页' : `page_${i}`}
 aside: false
 ---
-<script setup>
-import { useData } from "vitepress";
-import Page from "./.vitepress/theme/components/Page.vue";
 
-const { theme } = useData();
+<script setup>
+import { useData } from 'vitepress'
+import Page from './.vitepress/theme/components/Page.vue'
+
+const { theme } = useData()
 const posts = theme.value.posts.slice(${pageSize * (i - 1)}, ${pageSize * i})
 </script>
 
