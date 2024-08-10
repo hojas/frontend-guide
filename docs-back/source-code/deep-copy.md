@@ -21,10 +21,11 @@ function deepCopy(obj) {
       // 递归拷贝数组的每一项
       copy[i] = deepCopy(obj[i])
     }
-  } else {
+  }
+  else {
     // 如果是对象，创建一个新对象
     copy = {}
-    for (let key in obj) {
+    for (const key in obj) {
       if (obj.hasOwnProperty(key)) {
         // 递归拷贝对象的每一个属性
         copy[key] = deepCopy(obj[key])

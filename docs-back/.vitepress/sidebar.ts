@@ -69,8 +69,8 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '浏览器原理',
       items: [
         { text: '进程和线程', link: '/browser/process-and-thread' },
-        { text: '事件循环', link: '/browser/event-loop' },
-        { text: '页面渲染原理', link: '/browser/rendering' },
+        { text: '事件循环', link: '/browser/6' },
+        { text: '页面渲染原理', link: '/browser/7' },
       ],
     },
   ],
@@ -78,7 +78,7 @@ export const sidebar: DefaultTheme.Sidebar = {
     {
       text: 'Node.js',
       items: [
-        { text: '事件循环', link: '/nodejs/event-loop' },
+        { text: '事件循环', link: '/nodejs/6' },
       ],
     },
   ],
