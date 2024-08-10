@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { getPosts } from './theme/serverUtils'
+import { head } from './head'
 
 // 每页的文章数量
 const pageSize = 15
@@ -11,6 +12,7 @@ export default defineConfig({
   title: '前端指北',
   description: '前端指北是一个分享前端开发技术和 Node.js 开发技术的编程网站。',
   ignoreDeadLinks: true,
+  head,
   themeConfig: {
     posts: await getPosts(pageSize),
     website: 'https://www.feguide.net', // copyright link
