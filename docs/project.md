@@ -1,10 +1,10 @@
 # 项目
 
-## 用于渲染 Markdown 的 Vue 3 组件
+## 渲染 Markdown 的 Vue 3 组件
 
 https://github.com/hojas/vue-markdown-viewer
 
-## 用于渲染 mermaid 的 Vue 3 组件
+## 渲染 mermaid 的 Vue 3 组件
 
 https://github.com/hojas/vue-mermaid-render
 
