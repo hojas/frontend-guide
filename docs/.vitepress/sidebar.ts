@@ -3,6 +3,7 @@ export const sidebar = {
     {
       text: '博客',
       items: [
+        { text: 'JavaScript 手写实现 call、apply 和 bind 函数', link: '/blog/8' },
         { text: 'Vue3 的响应式原理简介', link: '/blog/7' },
         { text: '浏览器页面渲染原理', link: '/blog/6' },
         { text: '浏览器事件循环原理', link: '/blog/5' },

@@ -1,5 +1,6 @@
 # 博客
 
+- [JavaScript 手写实现 call、apply 和 bind 函数](./blog/8)
 - [Vue3 响应式原理简介](./blog/7)
 - [浏览器页面渲染原理](./blog/6)
 - [浏览器事件循环原理](./blog/5)
