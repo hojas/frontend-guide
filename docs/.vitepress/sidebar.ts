@@ -3,6 +3,7 @@ export const sidebar = {
     {
       text: '博客',
       items: [
+        { text: 'TypeScript 中 type 和 interface 有什么区别', link: '/blog/9' },
         { text: 'JavaScript 手写实现 call、apply 和 bind 函数', link: '/blog/8' },
         { text: 'Vue3 的响应式原理简介', link: '/blog/7' },
         { text: '浏览器页面渲染原理', link: '/blog/6' },
