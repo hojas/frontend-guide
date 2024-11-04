@@ -5,7 +5,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       name: 'keywords',
-      content: '前端开发,前端博客,Node.js开发',
+      content: 'frontend,前端开发,前端博客,vue,react,webpack,Node.js开发',
     },
   ],
   [
@@ -16,14 +16,5 @@ export const head: HeadConfig[] = [
     'script',
     {},
     'LA.init({id:"KHEitCBwNlzuiGqc",ck:"KHEitCBwNlzuiGqc",autoTrack:true,hashMode:true,screenRecord:true})',
-  ],
-  [
-    'script',
-    { src: 'https://sdk.51.la/perf/js-sdk-perf.min.js', crossorigin: 'anonymous' },
-  ],
-  [
-    'script',
-    {},
-    'new LingQue.Monitor().init({id:"KNMThgvfRcpYrDaA",sendSpaPv:true})',
   ],
 ]
