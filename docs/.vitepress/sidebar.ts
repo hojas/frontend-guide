@@ -5,6 +5,10 @@ export const sidebar = {
       items: [
         { text: '深度解析 JavaScript 中 var、let、const 的区别', link: '/javascript/1' },
         { text: 'JavaScript/ECMAScript 中的数据类型全解析', link: '/javascript/2' },
+        { text: 'JavaScript 中的内置对象：探索核心语言的强大工具', link: '/javascript/3' },
+        { text: 'JavaScript 中的 JSON：数据交换的强大工具', link: '/javascript/4' },
+        { text: 'JavaScript 中的 Map 和 WeakMap 详解', link: '/javascript/5' },
+        { text: 'JavaScript 中的 Set 和 WeakSet 详解', link: '/javascript/6' },
       ],
     },
   ],
