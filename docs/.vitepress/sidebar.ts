@@ -1,4 +1,13 @@
 export const sidebar = {
+  '/javascript': [
+    {
+      text: 'JavaScript',
+      items: [
+        { text: '深度解析 JavaScript 中 var、let、const 的区别', link: '/javascript/1' },
+        { text: 'JavaScript/ECMAScript 中的数据类型全解析', link: '/javascript/2' },
+      ],
+    },
+  ],
   '/blog/': [
     {
       text: '博客',

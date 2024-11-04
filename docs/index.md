@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: 陈远翔
-  text: 个人网站
-  tagline: 热爱前端开发和 Node.js 开发
+  name: FrontendGuide
+  text: 前端指北
+  tagline: 分享前端开发和 Node.js 开发核心知识
   image:
     src: /home.gif
     alt: VitePress
@@ -17,12 +17,12 @@ hero:
       link: /project
 
 features:
-  - title: 前端开发
-    details: 熟悉 Vue3 并了解其实现原理，了解 React 等其他前端框架
-  - title: Node.js
-    details: 熟悉 Node.js 生态，了解 Express、Koa、Nest 等框架
+  - title: 夯实基础
+    details: 分享 JavaScript 和 TypeScript 等语言核心知识
+  - title: 前端框架
+    details: 分享 Vue3 和 React 等框架核心知识
   - title: 前端工程化
-    details: 熟悉前端工程化，掌握 Webpack、Vite、Rollup 等工具
-  - title: 数据结构和算法
-    details: 了解常见数据结构和算法，Leetcode 刷题 300+
+    details: 分享 Webpack、Vite、Rollup 等工具核心知识
+  - title: Node.js
+    details: 分享 Node.js 及相关框架核心知识
 ---

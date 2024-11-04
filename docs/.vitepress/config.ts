@@ -5,14 +5,15 @@ import { sidebar } from './sidebar'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
-  title: '陈远翔',
-  description: '热爱前端开发',
+  title: '前端指北',
+  description: '分享前端开发和 Node.js 开发核心知识',
   ignoreDeadLinks: true,
   head,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: 'JavaScript', link: '/javascript' },
       { text: '博客', link: '/blog' },
       { text: '项目', link: '/project' },
       { text: '关于', link: '/about' },
@@ -30,7 +31,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '陈远翔个人网站',
+      message: 'FrontendGuide 编程指北',
       copyright: 'Copyright © 2024-present feguide.net',
     },
   },
