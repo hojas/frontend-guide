@@ -31,7 +31,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'FrontendGuide 编程指北',
+      message: 'FrontendGuide 前端指北',
       copyright: 'Copyright © 2024-present feguide.net',
     },
   },
