@@ -28,13 +28,10 @@ export const sidebar = {
   ],
   '/blog/': [
     {
-      text: '博客',
+      text: '实战',
       items: [
         { text: 'TypeScript 中 type 和 interface 有什么区别', link: '/blog/9' },
-        { text: 'JavaScript 手写实现 call、apply 和 bind 函数', link: '/blog/8' },
         { text: 'Vue3 的响应式原理简介', link: '/blog/7' },
-        { text: '浏览器页面渲染原理', link: '/blog/2' },
-        { text: '浏览器事件循环原理', link: '/blog/1' },
         { text: '手写实现数组实例方法', link: '/blog/4' },
         { text: '使用 Docker 一键部署带 Let\'s Encrypt SSL 证书的 Nginx', link: '/blog/3' },
         { text: '在 Vue 中实现音频可视化', link: '/blog/2' },
