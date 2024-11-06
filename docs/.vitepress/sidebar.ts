@@ -26,7 +26,7 @@ export const sidebar = {
       ],
     },
   ],
-  '/blog/': [
+  '/blog': [
     {
       text: '实战',
       items: [
