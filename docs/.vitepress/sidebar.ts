@@ -9,6 +9,8 @@ export const sidebar = {
         { text: 'JavaScript 中的 JSON：数据交换的强大工具', link: '/javascript/4' },
         { text: 'JavaScript 中的 Map 和 WeakMap 详解', link: '/javascript/5' },
         { text: 'JavaScript 中的 Set 和 WeakSet 详解', link: '/javascript/6' },
+        { text: 'JavaScript 中的 TypedArray 详解', link: '/javascript/7' },
+        { text: 'JavaScript 中 ==、=== 和 Object.is() 有什么区别？', link: '/javascript/8' },
       ],
     },
   ],
