@@ -10,8 +10,8 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 博客
-      link: /blog
+      text: 阅读
+      link: /javascript
     - theme: alt
       text: 项目
       link: /project
