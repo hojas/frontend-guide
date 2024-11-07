@@ -14,6 +14,8 @@ export const sidebar = {
         { text: 'JavaScript 中箭头函数和普通函数的区别', link: '/javascript/9' },
         { text: 'JavaScript 中的闭包详解', link: '/javascript/10' },
         { text: '手写实现 call、apply 和 bind 函数', link: '/javascript/11' },
+        { text: '深入理解 JavaScript 中的 this', link: '/javascript/12' },
+        { text: '深入理解 JavaScript 中的 Promise', link: '/javascript/13' },
       ],
     },
   ],
