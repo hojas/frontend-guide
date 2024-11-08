@@ -14,7 +14,6 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'JavaScript', link: '/javascript' },
-      { text: '浏览器原理', link: '/browser' },
       { text: '实战', link: '/blog' },
       { text: '项目', link: '/project' },
       { text: '关于', link: '/about' },

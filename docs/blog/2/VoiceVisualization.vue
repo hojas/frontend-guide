@@ -48,7 +48,7 @@ function onAudioPlay() {
   const destination = audioCtx.destination
   analyser.value.fftSize = 512
   // 创建数组，用于接收分析器节点的分析数据
-  // analyser.frequencyBinCount = analyser.fftSize / 2
+  // analyser.frequencyBinCount = analyser.fftSize / 6
   // 为什么用Uint8Array？
   // 因为音频分析数据是无符号整数，范围是0~255
   // Uint8Array的范围也是0~255，所以可以直接使用
