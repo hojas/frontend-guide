@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^3.8.0
-        version: 3.8.0(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(@vue/compiler-sfc@3.5.12)(eslint@9.14.0)(typescript@5.6.3)
+        version: 3.8.0(@typescript-eslint/utils@8.13.0(eslint@9.14.0)(typescript@5.6.3))(@vue.md/compiler-sfc@3.5.12)(eslint@9.14.0)(typescript@5.6.3)
       eslint:
         specifier: ^9.14.0
         version: 9.14.0
@@ -2164,14 +2164,14 @@ snapshots:
       eslint-plugin-jsonc: 2.17.0(eslint@9.14.0)
       eslint-plugin-n: 17.13.1(eslint@9.14.0)
       eslint-plugin-no-only-tests: 3.3.0
-      eslint-plugin-perfectionist: 3.9.1(eslint@9.14.0)(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.14.0))
+      eslint-plugin-perfectionist: 3.9.1(eslint@9.14.0)(typescript@5.6.3)(vue.md-eslint-parser@9.4.3(eslint@9.14.0))
       eslint-plugin-regexp: 2.6.0(eslint@9.14.0)
       eslint-plugin-toml: 0.11.1(eslint@9.14.0)
       eslint-plugin-unicorn: 56.0.0(eslint@9.14.0)
       eslint-plugin-unused-imports: 4.1.4(@typescript-eslint/eslint-plugin@8.13.0(@typescript-eslint/parser@8.13.0(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)(typescript@5.6.3))(eslint@9.14.0)
       eslint-plugin-vue: 9.30.0(eslint@9.14.0)
       eslint-plugin-yml: 1.15.0(eslint@9.14.0)
-      eslint-processor-vue-blocks: 0.1.2(@vue/compiler-sfc@3.5.12)(eslint@9.14.0)
+      eslint-processor-vue-blocks: 0.1.2(@vue.md/compiler-sfc@3.5.12)(eslint@9.14.0)
       globals: 15.12.0
       jsonc-eslint-parser: 2.4.0
       local-pkg: 0.5.0
@@ -2183,7 +2183,7 @@ snapshots:
       yargs: 17.7.2
     transitivePeerDependencies:
       - '@typescript-eslint/utils'
-      - '@vue/compiler-sfc'
+      - '@vue.md/compiler-sfc'
       - supports-color
       - svelte
       - typescript
@@ -2725,31 +2725,31 @@ snapshots:
     dependencies:
       '@types/web-bluetooth': 0.0.20
       '@vueuse/metadata': 11.2.0
-      '@vueuse/shared': 11.2.0(vue@3.5.12(typescript@5.6.3))
-      vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.3))
+      '@vueuse/shared': 11.2.0(vue.md@3.5.12(typescript@5.6.3))
+      vue-demi: 0.14.10(vue.md@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - '@vue.md/composition-api'
+      - vue.md
 
   '@vueuse/integrations@11.2.0(focus-trap@7.6.0)(vue@3.5.12(typescript@5.6.3))':
     dependencies:
-      '@vueuse/core': 11.2.0(vue@3.5.12(typescript@5.6.3))
-      '@vueuse/shared': 11.2.0(vue@3.5.12(typescript@5.6.3))
-      vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.3))
+      '@vueuse/core': 11.2.0(vue.md@3.5.12(typescript@5.6.3))
+      '@vueuse/shared': 11.2.0(vue.md@3.5.12(typescript@5.6.3))
+      vue-demi: 0.14.10(vue.md@3.5.12(typescript@5.6.3))
     optionalDependencies:
       focus-trap: 7.6.0
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - '@vue.md/composition-api'
+      - vue.md
 
   '@vueuse/metadata@11.2.0': {}
 
   '@vueuse/shared@11.2.0(vue@3.5.12(typescript@5.6.3))':
     dependencies:
-      vue-demi: 0.14.10(vue@3.5.12(typescript@5.6.3))
+      vue-demi: 0.14.10(vue.md@3.5.12(typescript@5.6.3))
     transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
+      - '@vue.md/composition-api'
+      - vue.md
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -4169,11 +4169,11 @@ snapshots:
       '@shikijs/transformers': 1.22.2
       '@shikijs/types': 1.22.2
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10)(vue@3.5.12(typescript@5.6.3))
+      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10)(vue.md@3.5.12(typescript@5.6.3))
       '@vue/devtools-api': 7.6.3
       '@vue/shared': 3.5.12
-      '@vueuse/core': 11.2.0(vue@3.5.12(typescript@5.6.3))
-      '@vueuse/integrations': 11.2.0(focus-trap@7.6.0)(vue@3.5.12(typescript@5.6.3))
+      '@vueuse/core': 11.2.0(vue.md@3.5.12(typescript@5.6.3))
+      '@vueuse/integrations': 11.2.0(focus-trap@7.6.0)(vue.md@3.5.12(typescript@5.6.3))
       focus-trap: 7.6.0
       mark.js: 8.11.1
       minisearch: 7.1.0
@@ -4186,7 +4186,7 @@ snapshots:
       - '@algolia/client-search'
       - '@types/node'
       - '@types/react'
-      - '@vue/composition-api'
+      - '@vue.md/composition-api'
       - async-validator
       - axios
       - change-case
@@ -4232,7 +4232,7 @@ snapshots:
       '@vue/compiler-dom': 3.5.12
       '@vue/compiler-sfc': 3.5.12
       '@vue/runtime-dom': 3.5.12
-      '@vue/server-renderer': 3.5.12(vue@3.5.12(typescript@5.6.3))
+      '@vue/server-renderer': 3.5.12(vue.md@3.5.12(typescript@5.6.3))
       '@vue/shared': 3.5.12
     optionalDependencies:
       typescript: 5.6.3

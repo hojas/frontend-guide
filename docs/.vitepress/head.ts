@@ -5,7 +5,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       name: 'keywords',
-      content: 'frontend,前端开发,前端博客,vue,react,webpack,Node.js开发',
+      content: 'frontend,前端开发,前端博客,vue.md,react,webpack,Node.js开发',
     },
   ],
   [

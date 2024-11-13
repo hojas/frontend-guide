@@ -6,13 +6,15 @@ import { sidebar } from './sidebar'
 export default defineConfig({
   lang: 'zh-Hans',
   title: '前端指北',
-  description: '分享前端开发和 Node.js 开发核心知识',
+  description: '收集网络上优质的大前端开发和 Node.js 开发知识',
   ignoreDeadLinks: true,
   head,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
+      { text: '前端基础', link: '/basic' },
+      { text: 'Vue', link: '/vue' },
       { text: 'JavaScript', link: '/javascript' },
       { text: '实战', link: '/blog' },
       { text: '项目', link: '/project' },
