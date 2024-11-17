@@ -1,15 +1,17 @@
 # 前端基础
 
-## HTML & CSS
+## HTML
 
 - https://wangdoc.com/html
-- https://www.w3school.com.cn/index.html
+
+## CSS
+
+- https://moderncss.dev/
 
 ## JavaScript
 
-- https://wangdoc.com/javascript/
+- https://zh.javascript.info/
 - https://wangdoc.com/es6/
-- https://www.w3school.com.cn/js/index.asp
 
 ## TypeScript
 
