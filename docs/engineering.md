@@ -31,4 +31,9 @@
 
 - Jenkins
 - Travis CI
+- Ansible
 - Docker
+
+## 服务器
+
+- Nginx
