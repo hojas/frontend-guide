@@ -1,4 +1,10 @@
 export const sidebar = {
+  '/general-knowledge': [{
+    text: '编程通识',
+    items: [
+      { text: '字符集和编码', link: './character-set-and-encoding' },
+    ],
+  }],
   '/javascript': [
     {
       text: 'JavaScript',
