@@ -1,4 +1,10 @@
 export const sidebar = {
+  '/technical-solution': [{
+    text: '技术方案',
+    items: [
+      { text: '微前端', link: './micro-frontend' },
+    ],
+  }],
   '/general-knowledge': [{
     text: '编程通识',
     items: [
