@@ -11,6 +11,24 @@
 - [webpack](https://webpack.js.org/)
 - [vite](https://vitejs.dev/)
 - [rollup](https://rollupjs.org/)
+- [esbuild](https://esbuild.github.io/)
+- [Rolldown](https://rolldown.rs/)
+- [Rspack](https://rspack.dev/zh/)
+- [Turbopack](https://turbo.build/pack/docs)
+
+## 构建系统
+
+- [Nx](https://nx.dev/)
+- [Turborepo](https://turbo.build/repo/docs)
+
+## 语言增强
+
+- [Babel](https://babeljs.io/)
+- [SWC](https://swc.rs/)
+- [PostCSS](https://postcss.org/)
+- [SASS](https://sass-lang.com/)
+- [LESS](https://lesscss.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## 代码质量
 
