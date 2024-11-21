@@ -21,8 +21,8 @@ export default defineConfig({
       { text: '技术方案', link: '/technical-solution' },
       { text: '计算机基础', link: 'https://www.xiaolincoding.com/' },
       { text: '编程通识', link: '/general-knowledge' },
-      { text: '实战', link: '/blog' },
-      { text: '项目', link: '/project' },
+      // { text: '实战', link: '/blog' },
+      // { text: '项目', link: '/project' },
       { text: '关于', link: '/about' },
     ],
 

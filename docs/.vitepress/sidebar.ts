@@ -2,13 +2,13 @@ export const sidebar = {
   '/technical-solution': [{
     text: '技术方案',
     items: [
-      { text: '微前端', link: './micro-frontend' },
+      { text: '微前端', link: '/technical-solution/micro-frontend' },
     ],
   }],
   '/general-knowledge': [{
     text: '编程通识',
     items: [
-      { text: '字符集和编码', link: './character-set-and-encoding' },
+      { text: '字符集和编码', link: '/general-knowledge/character-set-and-encoding' },
     ],
   }],
   '/javascript': [
