@@ -10,11 +10,11 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 阅读
-      link: /javascript
+      text: 开始学习
+      link: /basic
     - theme: alt
-      text: 项目
-      link: /project
+      text: 关注一下
+      link: https://github.com/hojas
 
 features:
   - title: 夯实基础
