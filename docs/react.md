@@ -1,54 +1,57 @@
-# React
+# React 生态系统
 
 ## 入门
 
-https://zh-hans.react.dev/
+- [官方文档](https://react.dev/)
 
-## 生态系统
+## 路由
 
-### 路由
+- [React Router](https://reactrouter.com/)
 
-https://reactrouter.com/en/main
-
-### 状态管理
+## 状态管理
 
 **中心化状态管理**
 
-- https://redux.js.org/
+- [Redux](https://redux.js.org/)
 
 **响应式状态管理**
 
-- https://zh.mobx.js.org/README.html
+- [Mobx](https://mobx.js.org/)
 
 **原子化/声明式状态管理**
 
-- https://recoiljs.org/zh-hans/
-- https://jotai.org/
+- [Recoil](https://recoiljs.org/zh-hans/)
+- [Jotai](https://jotai.org/)
 
 **状态机和状态管理**
 
-- https://stately.ai/docs/xstate
+- [XState](https://stately.ai/docs/xstate)
 
 **灵活轻量级状态管理**
 
-- https://zustand-demo.pmnd.rs/
+- [Zustand](https://zustand-demo.pmnd.rs/)
 
 **数据获取和缓存**
 
-- https://tanstack.com/query/latest
-- https://swr.vercel.app/zh-CN
+- [TanStack Query](https://tanstack.com/query/latest)
+- [SWR](https://swr.vercel.app/zh-CN)
 
-### hooks
+## hooks
 
-- https://ahooks.js.org/
+- [ahooks](https://ahooks.js.org/)
 
-### 组件库
+## 组件库
 
-- https://ant.design/
+- [shadcn/ui](https://ui.shadcn.com/)
+- [MUI](https://mui.com/)
+- [Ant Design](https://ant.design/)
+- [React Bootstrap](https://react-bootstrap.netlify.app/)
 
-### 框架
+## 框架
 
-- https://nextjs.org/docs
+- https://nextjs.org/
+- https://remix.run/
+- https://www.gatsbyjs.com/
 
 ## 实现原理
 

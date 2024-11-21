@@ -20,8 +20,10 @@
 
 ## 自动化测试
 
-- Vitest
-- Jest
+- [Vitest](https://vitepress.dev/)
+- [Jest](https://vitepress.dev/)
+- [Playwright](https://playwright.dev/)
+- [cypress](https://www.cypress.io/)
 
 ## 版本控制
 
@@ -29,11 +31,5 @@
 
 ## CI/CD
 
-- Jenkins
-- Travis CI
-- Ansible
-- Docker
-
-## 服务器
-
-- Nginx
+- [Jenkins](https://www.jenkins.io/)
+- [Docker](https://www.docker.com/)
