@@ -20,6 +20,7 @@ export default defineConfig({
       { text: '前端工程化', link: '/engineering' },
       { text: 'Node.js', link: 'https://nodejstoolbox.com/' },
       { text: '技术方案', link: '/technical-solution' },
+      { text: '编程思想', link: '/thinking' },
       { text: '计算机基础', link: 'https://www.xiaolincoding.com/' },
       { text: '编程通识', link: '/general-knowledge' },
       // { text: '实战', link: '/blog' },
