@@ -2,7 +2,9 @@ export const sidebar = {
   '/technical-solution': [{
     text: '技术方案',
     items: [
+      { text: '跨端开发', link: '/technical-solution/cross-platform' },
       { text: '微前端', link: '/technical-solution/micro-frontend' },
+      { text: '数据可视化', link: '/technical-solution/data-visualization' },
     ],
   }],
   '/general-knowledge': [{
