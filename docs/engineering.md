@@ -6,6 +6,13 @@
 - ES Module
 - UMD
 
+## 包管理
+
+- [pnpm](https://pnpm.io/)
+- [npm](https://docs.npmjs.com/)
+- [yarn](https://yarnpkg.com/)
+- [monorepo](https://monorepo.tools/)
+
 ## 构建工具
 
 - [webpack](https://webpack.js.org/)
@@ -21,10 +28,14 @@
 - [Nx](https://nx.dev/)
 - [Turborepo](https://turbo.build/repo/docs)
 
-## 语言增强
+## JavaScript 工具链
 
 - [Babel](https://babeljs.io/)
+- [Terser](https://terser.org/)
 - [SWC](https://swc.rs/)
+
+## CSS 工具链
+
 - [PostCSS](https://postcss.org/)
 - [SASS](https://sass-lang.com/)
 - [LESS](https://lesscss.org/)
