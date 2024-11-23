@@ -7,12 +7,6 @@ export const sidebar = {
       { text: '数据可视化', link: '/technical-solution/data-visualization' },
     ],
   }],
-  '/general-knowledge': [{
-    text: '编程通识',
-    items: [
-      { text: '字符集和编码', link: '/general-knowledge/character-set-and-encoding' },
-    ],
-  }],
   '/javascript': [
     {
       text: 'JavaScript',

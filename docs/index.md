@@ -30,7 +30,3 @@ features:
   - title: 部署运维
     details: 包括 Linux、Docker 等知识
 ---
-
-<script setup>
-import Orthographic from '../components/Orthographic/index.vue'
-</script>
