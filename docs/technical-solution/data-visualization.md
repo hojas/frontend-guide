@@ -10,8 +10,10 @@ title: 数据可视化
 - [ZRender](https://ecomfe.github.io/zrender-doc/public/)
 - [D3](https://d3js.org/)
 - [AntV](https://antv.antgroup.com/zh)
+- [Highcharts](https://www.highcharts.com/)
 
 ## 3D
 
 - [Three.js](https://threejs.org/)
 - [Babylon.js](https://www.babylonjs.com/)
+- [CesiumJS](https://cesium.com/platform/cesiumjs/)
