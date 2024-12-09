@@ -12,6 +12,10 @@ title: 数据可视化
 - [AntV](https://antv.antgroup.com/zh)
 - [Highcharts](https://www.highcharts.com/)
 
+### 地图
+
+- [OpenLayers](https://openlayers.org/)
+
 ## 3D
 
 - [Three.js](https://threejs.org/)
