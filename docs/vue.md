@@ -12,7 +12,7 @@
 
 - [Pinia](https://pinia.vuejs.org/zh/)
 
-## Composition
+## Composables
 
 - [VueUse](https://vueuse.org/)
 
