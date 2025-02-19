@@ -5,6 +5,6 @@ export default antfu({
   typescript: true,
   formatters: {
     html: true,
-    css: true
-  }
+    css: true,
+  },
 })
