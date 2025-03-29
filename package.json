@@ -2,7 +2,7 @@
   "name": "frontend-guide",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.7.0",
   "author": "hojas",
   "license": "MIT",
   "main": "index.js",
@@ -13,8 +13,8 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
-    "eslint": "^9.20.1",
+    "@antfu/eslint-config": "^4.11.0",
+    "eslint": "^9.23.0",
     "eslint-plugin-format": "^1.0.1",
     "vitepress": "^1.6.3",
     "vue": "^3.5.13"
